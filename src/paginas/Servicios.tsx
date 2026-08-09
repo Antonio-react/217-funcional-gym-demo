@@ -1,0 +1,119 @@
+import { motion } from 'framer-motion'
+import type { Variants } from 'framer-motion'
+import bannerImg from '../assets/Funtional Training Men.JPG'
+import fitnessImg from '../assets/Fitness.WEBP'
+import functionalImg from '../assets/Funtional Training Group.JPG'
+import personalImg from '../assets/Personal Trainer.JPG'
+
+const tarjetaVariants: Variants = {
+    hidden: { opacity: 0, y: 40 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+}
+
+export default function Servicios() {
+    return (
+        <>
+            <section
+                className="relative h-[60vh] bg-cover bg-top"
+                style={{ backgroundImage: `url(${bannerImg})` }}
+            >
+                <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/40 to-black" />
+                <div className="absolute inset-0 flex items-center justify-center -translate-y-6">
+                    <p className="text-white font-marker text-7xl md:text-9xl tracking-wider uppercase text-center">
+                        Servicios
+                    </p>
+                </div>
+            </section>
+
+            <section className="relative bg-black text-white pb-20 px-4 -mt-12">
+                <div className="max-w-5xl mx-auto">
+
+                    {/* Version escritorio: grid de 3 columnas */}
+                    <motion.div
+                        className="hidden md:grid grid-cols-3 gap-6"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        variants={{
+                            hidden: {},
+                            visible: { transition: { staggerChildren: 0.15 } }
+                        }}
+                    >
+                        <motion.div
+                            variants={tarjetaVariants}
+                            className="group bg-zinc-900/80 backdrop-blur-md rounded-2xl border border-zinc-800 shadow-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-white/20"
+                        >
+                            <div className="overflow-hidden">
+                                <img src={fitnessImg} alt="Sala de musculacion" className="w-full h-48 object-cover object-top transition-transform duration-300 group-hover:scale-110" />
+                            </div>
+                            <div className="p-6 text-center">
+                                <p className="text-lg font-bold uppercase tracking-wide mb-2">Sala de musculación</p>
+                                <p className="text-sm text-gray-400 text-justify">Zona de peso libre y maquinaria de alta gama diseñada para entrenar de verdad. Espacio amplio y equipamiento profesional.</p>
+                            </div>
+                        </motion.div>
+
+                        <motion.div
+                            variants={tarjetaVariants}
+                            className="group bg-zinc-900/80 backdrop-blur-md rounded-2xl border border-zinc-800 shadow-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-white/20"
+                        >
+                            <div className="overflow-hidden">
+                                <img src={functionalImg} alt="Functional Training" className="w-full h-48 object-cover object-top transition-transform duration-300 group-hover:scale-110" />
+                            </div>
+                            <div className="p-6 text-center">
+                                <p className="text-lg font-bold uppercase tracking-wide mb-2">Functional Training</p>
+                                <p className="text-sm text-gray-400 text-justify">Entrenamientos funcionales en grupo para mejorar tu rendimiento y movilidad. Adaptado a tu nivel actual.</p>
+                            </div>
+                        </motion.div>
+
+                        <motion.div
+                            variants={tarjetaVariants}
+                            className="group bg-zinc-900/80 backdrop-blur-md rounded-2xl border border-zinc-800 shadow-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-white/20"
+                        >
+                            <div className="overflow-hidden">
+                                <img src={personalImg} alt="Personal Trainer" className="w-full h-48 object-cover object-top transition-transform duration-300 group-hover:scale-110" />
+                            </div>
+                            <div className="p-6 text-center">
+                                <p className="text-lg font-bold uppercase tracking-wide mb-2">Personal Trainer</p>
+                                <p className="text-sm text-gray-400 text-justify">Entrenamientos personalizados a cada cliente, totalmente adaptados a sus objetivos.</p>
+                            </div>
+                        </motion.div>
+                    </motion.div>
+
+                    {/* Version movil: carrusel con peek */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        viewport={{ once: true }}
+                        className="flex md:hidden overflow-x-auto snap-x snap-mandatory gap-4 px-4 pb-2"
+                    >
+                        <div className="snap-center shrink-0 w-[85%] bg-zinc-900/80 backdrop-blur-md rounded-2xl border border-zinc-800 shadow-xl overflow-hidden">
+                            <img src={fitnessImg} alt="Sala de musculacion" className="w-full h-48 object-cover object-top" />
+                            <div className="p-6 text-center">
+                                <p className="text-lg font-bold uppercase tracking-wide mb-2">Sala de musculación</p>
+                                <p className="text-sm text-gray-400 text-justify">Zona de peso libre y maquinaria de alta gama diseñada para entrenar de verdad. Espacio amplio y equipamiento profesional.</p>
+                            </div>
+                        </div>
+
+                        <div className="snap-center shrink-0 w-[85%] bg-zinc-900/80 backdrop-blur-md rounded-2xl border border-zinc-800 shadow-xl overflow-hidden">
+                            <img src={functionalImg} alt="Functional Training" className="w-full h-48 object-cover object-top" />
+                            <div className="p-6 text-center">
+                                <p className="text-lg font-bold uppercase tracking-wide mb-2">Functional Training</p>
+                                <p className="text-sm text-gray-400 text-justify">Entrenamientos funcionales en grupo para mejorar tu rendimiento y movilidad. Adaptado a tu nivel actual.</p>
+                            </div>
+                        </div>
+
+                        <div className="snap-center shrink-0 w-[85%] bg-zinc-900/80 backdrop-blur-md rounded-2xl border border-zinc-800 shadow-xl overflow-hidden">
+                            <img src={personalImg} alt="Personal Trainer" className="w-full h-48 object-cover object-top" />
+                            <div className="p-6 text-center">
+                                <p className="text-lg font-bold uppercase tracking-wide mb-2">Personal Trainer</p>
+                                <p className="text-sm text-gray-400 text-justify">Entrenamientos personalizados a cada cliente, totalmente adaptados a sus objetivos.</p>
+                            </div>
+                        </div>
+                    </motion.div>
+
+                </div>
+            </section>
+        </>
+    )
+}
