@@ -59,9 +59,9 @@ export default function SobreNosotros() {
                         Sin postureo. Sin excusas. Solo entrenamiento de verdad.
                     </h2>
                     <p className="text-gray-300 text-base md:text-lg leading-relaxed text-justify">
-                        No somos otro gimnasio mas donde pagas una cuota y se olvidan de tu nombre al cruzar el torno.
+                        No somos otro gimnasio más donde pagas una cuota y se olvidan de tu nombre al cruzar el torno.
                         Diseñamos este espacio para gente que quiere progresar, superarse a su ritmo y entrenar con libertad.
-                        Tengas el nivel que tengas, aqui vas a encontrar el equipamiento y la comunidad necesarios para cumplir tus metas.
+                        Tengas el nivel que tengas, aquí vas a encontrar el equipamiento y la comunidad necesarios para cumplir tus metas.
                     </p>
                 </motion.div>
             </section>
@@ -187,7 +187,7 @@ export default function SobreNosotros() {
 
             </section>
 
-            <section className="bg-black pb-24 px-4 text-center">
+            <section className="bg-black pb-16 px-4 py-4 text-center">
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}

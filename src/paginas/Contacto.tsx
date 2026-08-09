@@ -107,7 +107,7 @@ export default function Contacto() {
                                 onChange={(e) => setMensaje(e.target.value)}
                                 required
                                 rows={4}
-                                className="w-full bg-black border border-zinc-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-brand-gold resize-none"
+                                className="w-full bg-black border border-zinc-700 rounded-lg px-4 py-3 mb-4 text-white placeholder-gray-500 focus:outline-none focus:border-brand-gold resize-none"
                             />
                         </div>
                         <button

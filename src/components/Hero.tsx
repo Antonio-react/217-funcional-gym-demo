@@ -1,67 +1,64 @@
-import { motion, useScroll, useTransform } from 'framer-motion'
-import { useRef } from 'react'
-import { ChevronDown } from 'lucide-react'
+import { motion } from 'framer-motion'
 import heroImg from '../assets/gym.jpg'
+import type { Variants } from 'framer-motion'
+
+const contenedorVariants: Variants = {
+    hidden: {},
+    visible: {
+        transition: { staggerChildren: 0.08, delayChildren: 0.3 }
+    }
+}
+
+const palabraVariants: Variants = {
+    hidden: { opacity: 0, y: 40, rotate: -4 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        rotate: 0,
+        transition: { duration: 0.5, ease: "backOut" }
+    }
+}
 
 export default function Hero() {
-    const seccionRef = useRef<HTMLElement>(null)
-
-    const { scrollYProgress } = useScroll({
-        target: seccionRef,
-        offset: ['start start', 'end start']
-    })
-
-    const y = useTransform(scrollYProgress, [0, 1], ['0%', '30%'])
+    const texto = "Entrena de verdad. Empieza hoy."
 
     return (
-        <section ref={seccionRef} className="relative h-dvh overflow-hidden">
+        <section className="relative h-dvh overflow-hidden">
 
-            <motion.div className="absolute inset-0" style={{ y }}>
-                <motion.img
-                    src={heroImg}
-                    alt="217 GYM"
-                    className="w-full h-full object-cover"
-                    animate={{
-                        scale: [1, 1.25],
-                        x: ['0%', '-6%'],
-                        y: ['0%', '4%']
-                    }}
-                    transition={{ duration: 18, ease: "easeInOut", repeat: Infinity, repeatType: "reverse" }}
-                />
-            </motion.div>
-
-            {/* Vineta radial */}
-            <div
-                className="absolute inset-0"
-                style={{
-                    background: 'radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.6) 100%)'
+            <motion.img
+                src={heroImg}
+                alt="217 GYM"
+                className="absolute inset-0 w-full h-full object-cover"
+                initial={{ scale: 1.5, opacity: 0 }}
+                animate={{ scale: [1.5, 1, 1.08], opacity: 1 }}
+                transition={{
+                    opacity: { duration: 1.2, ease: "easeOut" },
+                    scale: {
+                        duration: 25,
+                        times: [0, 0.15, 1],
+                        ease: "easeOut",
+                        repeat: Infinity,
+                        repeatType: "reverse"
+                    }
                 }}
             />
-            <div className="absolute inset-0 bg-black/20" />
+
+            <div className="absolute inset-0 bg-black/30" />
 
             <div className="absolute top-[85%] left-1/2 -translate-x-1/2 -translate-y-1/2 text-center w-full px-4 z-10">
                 <motion.p
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-                    className="text-white font-marker text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-widest uppercase"
+                    initial="hidden"
+                    animate="visible"
+                    variants={contenedorVariants}
+                    className="text-white font-marker text-2xl sm:text-4xl md:text-5xl lg:text-6xl tracking-widest uppercase leading-tight"
                 >
-                    Entrena de verdad. Empieza hoy.
+                    {texto.split(" ").map((palabra, i) => (
+                        <motion.span key={i} variants={palabraVariants} className="inline-block mr-2 sm:mr-3">
+                            {palabra}
+                        </motion.span>
+                    ))}
                 </motion.p>
-
-                <div className="flex gap-4 justify-center mt-6">
-
-                </div>
             </div>
-
-            {/* Indicador de scroll */}
-            <motion.div
-                className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
-                animate={{ y: [0, 10, 0] }}
-                transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
-            >
-                <ChevronDown size={32} className="text-white/70" />
-            </motion.div>
 
         </section>
     )
