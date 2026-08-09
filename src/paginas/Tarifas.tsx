@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import type { Variants } from 'framer-motion'
-import bannerImg from '../assets/Mancuernero Luces.PNG'
+import bannerImg from '../assets/Mancuernero Luces.png'
 import { Link } from 'react-router-dom'
 
 const tarjetaVariants: Variants = {
