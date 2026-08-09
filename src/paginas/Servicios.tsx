@@ -4,6 +4,7 @@ import bannerImg from '../assets/Funtional Training Men.JPG'
 import fitnessImg from '../assets/Fitness.WEBP'
 import functionalImg from '../assets/Funtional Training Group.JPG'
 import personalImg from '../assets/Personal Trainer.JPG'
+import { Link } from 'react-router-dom'
 
 const tarjetaVariants: Variants = {
     hidden: { opacity: 0, y: 40 },
@@ -43,9 +44,9 @@ export default function Servicios() {
                             variants={tarjetaVariants}
                             className="group bg-zinc-900/80 backdrop-blur-md rounded-2xl border border-zinc-800 shadow-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-white/20"
                         >
-                            <div className="overflow-hidden">
+                            <Link to="/sobre-nosotros" className="overflow-hidden">
                                 <img src={fitnessImg} alt="Sala de musculacion" className="w-full h-48 object-cover object-top transition-transform duration-300 group-hover:scale-110" />
-                            </div>
+                            </Link>
                             <div className="p-6 text-center">
                                 <p className="text-lg font-bold uppercase tracking-wide mb-2">Sala de musculación</p>
                                 <p className="text-sm text-gray-400 text-justify">Zona de peso libre y maquinaria de alta gama diseñada para entrenar de verdad. Espacio amplio y equipamiento profesional.</p>
@@ -85,15 +86,15 @@ export default function Servicios() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, ease: "easeOut" }}
                         viewport={{ once: true }}
-                        className="flex md:hidden overflow-x-auto snap-x snap-mandatory gap-4 px-4 pb-2"
+                        className="flex md:hidden overflow-x-auto snap-x snap-mandatory gap-4 px-4 pb-2 no-scrollbar"
                     >
-                        <div className="snap-center shrink-0 w-[85%] bg-zinc-900/80 backdrop-blur-md rounded-2xl border border-zinc-800 shadow-xl overflow-hidden">
+                        <Link to="/sobre-nosotros" className="snap-center shrink-0 w-[85%] bg-zinc-900/80 backdrop-blur-md rounded-2xl border border-zinc-800 shadow-xl overflow-hidden">
                             <img src={fitnessImg} alt="Sala de musculacion" className="w-full h-48 object-cover object-top" />
                             <div className="p-6 text-center">
                                 <p className="text-lg font-bold uppercase tracking-wide mb-2">Sala de musculación</p>
                                 <p className="text-sm text-gray-400 text-justify">Zona de peso libre y maquinaria de alta gama diseñada para entrenar de verdad. Espacio amplio y equipamiento profesional.</p>
                             </div>
-                        </div>
+                        </Link>
 
                         <div className="snap-center shrink-0 w-[85%] bg-zinc-900/80 backdrop-blur-md rounded-2xl border border-zinc-800 shadow-xl overflow-hidden">
                             <img src={functionalImg} alt="Functional Training" className="w-full h-48 object-cover object-top" />

@@ -47,7 +47,7 @@ export default function SobreNosotros() {
                 </div>
             </section>
 
-            <section className="relative bg-black text-white pb-24 px-4 -mt-12">
+            <section className="relative bg-black text-white pb-20 px-4 -mt-12">
                 <motion.div
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -55,7 +55,7 @@ export default function SobreNosotros() {
                     viewport={{ once: true }}
                     className="max-w-3xl mx-auto text-center bg-zinc-900/80 backdrop-blur-md p-10 md:p-14 rounded-2xl border border-zinc-800 shadow-xl"
                 >
-                    <h2 className="font-staatliches text-3xl md:text-4xl uppercase tracking-wide mb-6">
+                    <h2 className="font-staatliches text-white text-3xl md:text-4xl uppercase tracking-wide mb-6">
                         Sin postureo. Sin excusas. Solo entrenamiento de verdad.
                     </h2>
                     <p className="text-gray-300 text-base md:text-lg leading-relaxed text-justify">
@@ -171,7 +171,7 @@ export default function SobreNosotros() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, ease: "easeOut" }}
                     viewport={{ once: true }}
-                    className="flex md:hidden overflow-x-auto snap-x snap-mandatory gap-4 px-4 pb-4"
+                    className="flex md:hidden overflow-x-auto snap-x snap-mandatory gap-4 px-4 no-scrollbar"
                 >
                     {[galeria1, galeria2, galeria3, galeria4, galeria5, galeria6].map((foto, i) => (
                         <div key={i} className="snap-center shrink-0 w-[85%] overflow-hidden rounded-xl">

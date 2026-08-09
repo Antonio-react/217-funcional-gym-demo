@@ -53,34 +53,34 @@ export default function Navbar() {
             <nav className={`fixed top-0 left-0 w-full z-50 flex items-center gap-6 px-4 md:px-6 py-3 transition-all duration-300 ${visible ? 'translate-y-0' : '-translate-y-full'} ${menuAbierto ? 'bg-black' : ultimoScroll > 80 ? 'bg-black/40 backdrop-blur-md' : 'bg-transparent'}`}>
 
                 <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="border-none bg-transparent p-0 cursor-pointer relative z-50">
-                    <img src="/217-gym.PNG" alt="217 GYM" className="h-12 w-auto block hover:scale-110" />
+                    <img src="/217-gym.PNG" alt="217 GYM" className="h-14 w-auto block hover:scale-110" />
                 </Link>
 
                 <ul className="hidden md:flex gap-10 list-none">
                     <li>
-                        <NavLink to="/horarios" className={({ isActive }) => `relative inline-block text-sm no-underline pb-1 transition-colors duration-200 ${isActive ? 'text-brand-gold' : 'text-white hover:text-brand-gold'} after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-px after:bg-brand-gold after:transition-all after:duration-300 ${isActive ? 'after:w-full' : 'after:w-0 hover:after:w-full'}`}>Horarios</NavLink>
+                        <NavLink to="/horarios" className={({ isActive }) => `relative inline-block text-base no-underline pb-1 transition-colors duration-200 ${isActive ? 'text-brand-gold' : 'text-white hover:text-brand-gold'} after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-px after:bg-brand-gold after:transition-all after:duration-300 ${isActive ? 'after:w-full' : 'after:w-0 hover:after:w-full'}`}>Horarios</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/servicios" className={({ isActive }) => `relative inline-block text-sm no-underline pb-1 transition-colors duration-200 ${isActive ? 'text-brand-gold' : 'text-white hover:text-brand-gold'} after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-px after:bg-brand-gold after:transition-all after:duration-300 ${isActive ? 'after:w-full' : 'after:w-0 hover:after:w-full'}`}>Servicios</NavLink>
+                        <NavLink to="/servicios" className={({ isActive }) => `relative inline-block text-base no-underline pb-1 transition-colors duration-200 ${isActive ? 'text-brand-gold' : 'text-white hover:text-brand-gold'} after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-px after:bg-brand-gold after:transition-all after:duration-300 ${isActive ? 'after:w-full' : 'after:w-0 hover:after:w-full'}`}>Servicios</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/tarifas" className={({ isActive }) => `relative inline-block text-sm no-underline pb-1 transition-colors duration-200 ${isActive ? 'text-brand-gold' : 'text-white hover:text-brand-gold'} after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-px after:bg-brand-gold after:transition-all after:duration-300 ${isActive ? 'after:w-full' : 'after:w-0 hover:after:w-full'}`}>Tarifas</NavLink>
+                        <NavLink to="/tarifas" className={({ isActive }) => `relative inline-block text-base no-underline pb-1 transition-colors duration-200 ${isActive ? 'text-brand-gold' : 'text-white hover:text-brand-gold'} after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-px after:bg-brand-gold after:transition-all after:duration-300 ${isActive ? 'after:w-full' : 'after:w-0 hover:after:w-full'}`}>Tarifas</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/sobre-nosotros" className={({ isActive }) => `relative inline-block text-sm no-underline pb-1 transition-colors duration-200 ${isActive ? 'text-brand-gold' : 'text-white hover:text-brand-gold'} after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-px after:bg-brand-gold after:transition-all after:duration-300 ${isActive ? 'after:w-full' : 'after:w-0 hover:after:w-full'}`}>Sobre nosotros</NavLink>
+                        <NavLink to="/sobre-nosotros" className={({ isActive }) => `relative inline-block text-base no-underline pb-1 transition-colors duration-200 ${isActive ? 'text-brand-gold' : 'text-white hover:text-brand-gold'} after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-px after:bg-brand-gold after:transition-all after:duration-300 ${isActive ? 'after:w-full' : 'after:w-0 hover:after:w-full'}`}>Sobre nosotros</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/ubicacion" className={({ isActive }) => `relative inline-block text-sm no-underline pb-1 transition-colors duration-200 ${isActive ? 'text-brand-gold' : 'text-white hover:text-brand-gold'} after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-px after:bg-brand-gold after:transition-all after:duration-300 ${isActive ? 'after:w-full' : 'after:w-0 hover:after:w-full'}`}>Ubicación</NavLink>
+                        <NavLink to="/ubicacion" className={({ isActive }) => `relative inline-block text-base no-underline pb-1 transition-colors duration-200 ${isActive ? 'text-brand-gold' : 'text-white hover:text-brand-gold'} after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-px after:bg-brand-gold after:transition-all after:duration-300 ${isActive ? 'after:w-full' : 'after:w-0 hover:after:w-full'}`}>Ubicación</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/contacto" className={({ isActive }) => `relative inline-block text-sm no-underline pb-1 transition-colors duration-200 ${isActive ? 'text-brand-gold' : 'text-white hover:text-brand-gold'} after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-px after:bg-brand-gold after:transition-all after:duration-300 ${isActive ? 'after:w-full' : 'after:w-0 hover:after:w-full'}`}>Contacto</NavLink>
+                        <NavLink to="/contacto" className={({ isActive }) => `relative inline-block text-base no-underline pb-1 transition-colors duration-200 ${isActive ? 'text-brand-gold' : 'text-white hover:text-brand-gold'} after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-px after:bg-brand-gold after:transition-all after:duration-300 ${isActive ? 'after:w-full' : 'after:w-0 hover:after:w-full'}`}>Contacto</NavLink>
                     </li>
                 </ul>
 
                 <button
                     ref={botonRef}
                     onClick={() => setMenuAbierto(!menuAbierto)}
-                    className={`md:hidden ml-auto border-none bg-transparent cursor-pointer transition-colors duration-200 relative z-50 ${menuAbierto ? 'text-white text-5xl' : 'text-brand-gold text-4xl'}`}
+                    className={`md:hidden ml-auto border-none bg-transparent cursor-pointer transition-colors duration-200 relative z-50 ${menuAbierto ? 'text-white text-5xl' : 'text-brand-gold text-5xl'}`}
                 >
                     {menuAbierto ? "✕" : "☰"}
                 </button>

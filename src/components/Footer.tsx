@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Phone, Mail, MapPin } from 'lucide-react'
+import { datos } from '../config/datos'
+
 
 export default function Footer() {
     return (
@@ -26,12 +28,12 @@ export default function Footer() {
 
                     <div className="flex flex-col items-center md:items-start w-full gap-2">
                         <p className="text-white font-semibold uppercase text-sm tracking-wide mb-2">Contacto</p>
-                        <a href="tel:689390264" className="flex items-center gap-2 text-sm no-underline text-gray-400 hover:text-brand-gold transition-colors py-1">
+                        <a href={`tel:${datos.phone.call}`} className="flex items-center gap-2 text-sm no-underline text-gray-400 hover:text-brand-gold transition-colors py-1">
                             <Phone size={16} className="text-brand-gold" />
-                            689 390 264
+                            {datos.phone.call}
                         </a>
                         <a
-                            href="https://wa.me/34689390264"
+                            href={`https://wa.me/${datos.phone.whatsapp}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-2 text-sm no-underline text-gray-400 hover:text-brand-gold transition-colors py-1"
@@ -42,14 +44,27 @@ export default function Footer() {
                             </svg>
                             WhatsApp
                         </a>
-                        <a href="mailto:217gym@gmail.com" className="flex items-center gap-2 text-sm no-underline text-gray-400 hover:text-brand-gold transition-colors py-1">
-                            <Mail size={16} className="text-brand-gold" />
-                            217gym@gmail.com
+                        <a 
+                            href={`https://instagram.com/${datos.instagram}`} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="flex items-center gap-2 text-sm no-underline text-gray-400 hover:text-brand-gold transition-colors py-1"
+                        >
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-gold">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                            </svg>
+                            Instagram
                         </a>
-                        <p className="flex items-center gap-2 text-sm py-1">
+                        <a href={`mailto:${datos.email}`} className="flex items-center gap-2 text-sm no-underline text-gray-400 hover:text-brand-gold transition-colors py-1">
+                            <Mail size={16} className="text-brand-gold" />
+                            {datos.email}
+                        </a>
+                        <Link to="/ubicacion" className="flex items-center gap-2 text-sm no-underline text-gray-400 hover:text-brand-gold transition-colors py-1">
                             <MapPin size={16} className="text-brand-gold" />
                             Ugena (Toledo)
-                        </p>
+                        </Link>
                     </div>
                 </div>
             </div>

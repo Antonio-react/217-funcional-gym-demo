@@ -23,7 +23,7 @@ export default function Hero() {
     const texto = "Entrena de verdad. Empieza hoy."
 
     return (
-        <section className="relative h-dvh overflow-hidden">
+        <section className="relative h-[85dvh] overflow-hidden">
 
             <motion.img
                 src={heroImg}
@@ -50,7 +50,7 @@ export default function Hero() {
                     initial="hidden"
                     animate="visible"
                     variants={contenedorVariants}
-                    className="text-white font-marker text-2xl sm:text-4xl md:text-5xl lg:text-6xl tracking-widest uppercase leading-tight"
+                    className="text-white font-marker text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-widest uppercase leading-tight"
                 >
                     {texto.split(" ").map((palabra, i) => (
                         <motion.span key={i} variants={palabraVariants} className="inline-block mr-2 sm:mr-3">

@@ -35,7 +35,7 @@ export default function ServiciosResumen() {
                 }}
             >
                 <motion.div variants={itemVariants} className="w-1/3">
-                    <Link to="/servicios" className="no-underline">
+                    <Link to="/sobre-nosotros" className="no-underline">
                         <div className="overflow-hidden">
                             <img src={fitnessImg} alt="Sala de musculacion" className="w-full h-64 object-cover transition-transform duration-300 hover:scale-110" />
                         </div>
@@ -74,9 +74,9 @@ export default function ServiciosResumen() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
                 viewport={{ once: true }}
-                className="flex md:hidden overflow-x-auto snap-x snap-mandatory gap-4 px-4 pb-2"
+                className="flex md:hidden overflow-x-auto snap-x snap-mandatory gap-4 px-4 pb-2 mb-10 no-scrollbar"
             >
-                <Link to="/servicios" className="snap-center shrink-0 w-[85%] no-underline">
+                <Link to="/sobre-nosotros" className="snap-center shrink-0 w-[85%] no-underline">
                     <div className="overflow-hidden">
                         <img src={fitnessImg} alt="Sala de musculacion" className="w-full h-64 object-cover rounded-xl" />
                     </div>
