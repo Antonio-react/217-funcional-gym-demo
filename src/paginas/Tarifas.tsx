@@ -17,7 +17,7 @@ export default function Tarifas() {
             >
                 <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/40 to-black" />
                 <div className="absolute inset-0 flex items-center justify-center -translate-y-6">
-                    <p className="text-white font-marker text-7xl md:text-9xl tracking-wider uppercase text-center">
+                    <p className="text-white font-marker text-6xl sm:text-7xl md:text-8xl lg:text-9xl tracking-wider uppercase text-center">
                         Tarifas
                     </p>
                 </div>
@@ -89,17 +89,14 @@ export default function Tarifas() {
                             <p className="text-sm text-gray-400 mt-1">al mes</p>
                             <p className="text-sm text-gray-500 mt-2">179,94 € pago unico</p>
                         </motion.div>
-                    </motion.div>
 
-                    <motion.div
-                        initial={{ opacity: 0, y: 40 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, ease: "easeOut" }}
-                        viewport={{ once: true }}
-                        className="w-full mx-auto min-[550px]:max-w-md bg-zinc-900/80 backdrop-blur-md p-8 rounded-2xl border border-zinc-800 shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-white/20 mt-6"
-                    >
-                        <p className="text-base text-gray-400 uppercase tracking-wide mb-3">Pase diario</p>
-                        <p className="text-4xl font-bold">5 €</p>
+                        <motion.div
+                            variants={tarjetaVariants}
+                            className="min-[550px]:col-span-2 w-full mx-auto min-[550px]:max-w-md bg-zinc-900/80 backdrop-blur-md p-8 rounded-2xl border border-zinc-800 shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-white/20"
+                        >
+                            <p className="text-base text-gray-400 uppercase tracking-wide mb-3">Pase diario</p>
+                            <p className="text-4xl font-bold">5 €</p>
+                        </motion.div>
                     </motion.div>
 
                     <motion.p

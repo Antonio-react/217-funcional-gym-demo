@@ -24,7 +24,7 @@ export default function Contacto() {
             >
                 <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/40 to-black" />
                 <div className="absolute inset-0 flex items-center justify-center -translate-y-6">
-                    <p className="text-white font-marker text-7xl md:text-9xl tracking-wider uppercase text-center">
+                    <p className="text-white font-marker text-6xl sm:text-7xl md:text-8xl lg:text-9xl tracking-wider uppercase text-center">
                         Contacto
                     </p>
                 </div>
@@ -38,7 +38,7 @@ export default function Contacto() {
                     viewport={{ once: true }}
                     className="max-w-2xl mx-auto text-center bg-zinc-900/80 backdrop-blur-md p-10 md:p-14 rounded-2xl border border-zinc-800 shadow-xl"
                 >
-                    <h2 className="font-staatliches text-3xl md:text-4xl uppercase tracking-wide mb-5">
+                    <h2 className="font-staatliches text-white text-3xl md:text-4xl uppercase tracking-wide mb-5">
                         ¿Hablamos?
                     </h2>
                     <p className="text-gray-400 text-sm uppercase tracking-widest mb-10">
@@ -85,7 +85,7 @@ export default function Contacto() {
                     viewport={{ once: true }}
                     className="max-w-2xl mx-auto text-center bg-zinc-900/80 backdrop-blur-md p-10 md:p-14 rounded-2xl border border-zinc-800 shadow-xl"
                 >
-                    <h2 className="font-staatliches text-3xl md:text-4xl uppercase tracking-wide mb-10">
+                    <h2 className="font-staatliches text-white text-3xl md:text-4xl uppercase tracking-wide mb-10">
                         Consulta
                     </h2>
 

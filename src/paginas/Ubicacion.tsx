@@ -16,7 +16,7 @@ export default function Ubicacion() {
             >
                 <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/40 to-black" />
                 <div className="absolute inset-0 flex items-center justify-center -translate-y-6">
-                    <p className="text-white font-marker text-7xl md:text-9xl tracking-wider uppercase text-center">
+                    <p className="text-white font-marker text-6xl sm:text-7xl md:text-8xl lg:text-9xl tracking-wider uppercase text-center">
                         Ubicación
                     </p>
                 </div>
@@ -30,7 +30,7 @@ export default function Ubicacion() {
                     viewport={{ once: true }}
                     className="bg-zinc-900/80 backdrop-blur-md rounded-2xl border border-zinc-800 shadow-xl overflow-hidden max-w-5xl mx-auto text-center py-10 px-4"
                 >
-                    <h2 className="text-4xl md:text-5xl font-staatliches uppercase mb-6">
+                    <h2 className="text-4xl md:text-5xl font-staatliches text-white uppercase mb-6">
                         Encuéntranos fácilmente
                     </h2>
 
