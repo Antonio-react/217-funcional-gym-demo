@@ -10,7 +10,7 @@ export default function Footer() {
 
                 <div className="flex flex-col items-center md:items-start gap-3">
                     <img src="/217-gym.PNG" alt="217 GYM" className="h-14 w-auto" />
-                    <p className="text-sm uppercase mb-2">Entrena de verdad. Empieza hoy.</p>
+                    <p className="text-sm uppercase mb-2">{datos.frase}</p>
                 </div>
 
                 <div className="grid grid-cols-2 gap-6 sm:gap-12 md:contents w-full max-w-md sm:max-w-none sm:px-8 mx-auto items-start">
