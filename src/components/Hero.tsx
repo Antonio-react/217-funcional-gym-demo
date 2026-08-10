@@ -28,7 +28,7 @@ export default function Hero() {
             <div className="absolute inset-0 opacity-15 md:opacity-20 mix-blend-overlay pointer-events-none grain" />
 
             {/* Contenido */}
-            <div className="relative z-10 h-full flex items-end translate-y-5 md:translate-y-0 pb-16 md:pb-16">
+            <div className="relative z-10 h-full flex items-end translate-y-5 md:translate-y-0 pb-16">
                 <div className="max-w-7xl mx-auto px-6 md:px-10 w-full">
 
                     <motion.div
@@ -39,7 +39,7 @@ export default function Hero() {
                     >
 
                         <h1 className="
-                            text-white text-[28px] sm:text-[34px] md:text-[48px] lg:text-[56px] font-extrabold leading-[1.1] sm:leading-[1.1] md:leading-[1.05] tracking-[-0.5px] md:tracking-[-1px] max-w-70 sm:max-w-85 md:max-w-125"
+                            text-white text-[28px] sm:text-[34px] md:text-[48px] lg:text-[56px] font-extrabold leading-[1.1] md:leading-[1.05] tracking-[-0.5px] md:tracking-[-1px] max-w-70 sm:max-w-85 md:max-w-125"
                         >
                             217 FUNCIONAL GYM
                         </h1>

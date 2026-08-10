@@ -80,9 +80,35 @@ export default function Navbar() {
                 <button
                     ref={botonRef}
                     onClick={() => setMenuAbierto(!menuAbierto)}
-                    className={`md:hidden ml-auto border-none bg-transparent cursor-pointer transition-colors duration-200 relative z-50 ${menuAbierto ? 'text-white text-5xl' : 'text-brand-gold text-5xl'}`}
+                    className={`md:hidden ml-auto relative w-10 h-10 z-50 flex items-center justify-center 
+                    transition-all duration-300 
+                    ${menuAbierto 
+                        ? 'text-white scale-150 bg-white/5 rounded-full backdrop-blur-sm' 
+                        : 'text-brand-gold scale-100 bg-transparent'}`}
                 >
-                    {menuAbierto ? "✕" : "☰"}
+                {/* Línea superior */}
+                <span
+                    className={`absolute h-0.5 w-6 bg-current transition-all duration-300 ease-in-out origin-center
+                    ${menuAbierto 
+                    ? 'rotate-45 top-1/2 -translate-y-1/2' 
+                    : 'top-2'}`}
+                />
+
+                {/* Línea central */}
+                <span
+                    className={`absolute h-0.5 w-6 bg-current transition-all duration-300 ease-in-out origin-center
+                    ${menuAbierto 
+                    ? 'opacity-0' 
+                    : 'top-1/2 -translate-y-1/2'}`}
+                />
+
+                {/* Línea inferior */}
+                <span
+                    className={`absolute h-0.5 w-6 bg-current transition-all duration-300 ease-in-out origin-center
+                    ${menuAbierto 
+                    ? '-rotate-45 top-1/2 -translate-y-1/2' 
+                    : 'bottom-2'}`}
+                />
                 </button>
 
             </nav>
@@ -91,18 +117,19 @@ export default function Navbar() {
             <div
                 ref={menuRef}
                 onClick={() => setMenuAbierto(false)}
-                className={`md:hidden fixed inset-0 z-40 bg-black flex flex-col items-center justify-center gap-8 transition-transform duration-300 ${menuAbierto ? 'translate-x-0' : 'translate-x-full'}`}
+                className={`md:hidden fixed inset-0 z-40 bg-black flex flex-col items-center justify-center gap-8 transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${menuAbierto ? 'translate-y-0' : '-translate-y-full'}`}
             >
                 <ul
+                    key={menuAbierto ? 'open' : 'closed'}
                     onClick={(e) => e.stopPropagation()}
-                    className="flex flex-col items-center gap-8 list-none"
+                    className="flex flex-col items-center gap-10 list-none"
                 >
                     <li>
                         <NavLink
                             to="/"
                             onClick={() => { setMenuAbierto(false); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
                             className={({ isActive }) =>
-                                `no-underline tracking-widest uppercase hover:scale-110 active:scale-95 transition-all duration-200 inline-block ${isActive ? 'text-white text-3xl font-marker' : 'text-brand-gold text-2xl'}`
+                                `no-underline tracking-widest uppercase hover:scale-110 active:scale-95 opacity-0 animate-[fadeUp_0.5s_cubic-bezier(0.22,1,0.36,1)_forwards] transition-all duration-200 inline-block ${isActive ? 'text-white text-4xl font-marker' : 'text-brand-gold text-2xl'}`
                             }
                         >
                             Inicio
@@ -113,7 +140,7 @@ export default function Navbar() {
                             to="/horarios"
                             onClick={() => setMenuAbierto(false)}
                             className={({ isActive }) =>
-                                `no-underline tracking-widest uppercase hover:scale-110 active:scale-95 transition-all duration-200 inline-block ${isActive ? 'text-white text-3xl font-marker' : 'text-brand-gold text-2xl'}`
+                                `no-underline tracking-widest uppercase hover:scale-110 active:scale-95 opacity-0 animate-[fadeUp_0.5s_cubic-bezier(0.22,1,0.36,1)_forwards] [animation-delay:150ms] transition-all duration-200 inline-block ${isActive ? 'text-white text-4xl font-marker' : 'text-brand-gold text-2xl'}`
                             }
                         >
                             Horarios
@@ -124,7 +151,7 @@ export default function Navbar() {
                             to="/servicios"
                             onClick={() => setMenuAbierto(false)}
                             className={({ isActive }) =>
-                                `no-underline tracking-widest uppercase hover:scale-110 active:scale-95 transition-all duration-200 inline-block ${isActive ? 'text-white text-3xl font-marker' : 'text-brand-gold text-2xl'}`
+                                `no-underline tracking-widest uppercase hover:scale-110 active:scale-95 opacity-0 animate-[fadeUp_0.5s_cubic-bezier(0.22,1,0.36,1)_forwards] [animation-delay:300ms] transition-all duration-200 inline-block ${isActive ? 'text-white text-4xl font-marker' : 'text-brand-gold text-2xl'}`
                             }
                         >
                             Servicios
@@ -135,7 +162,7 @@ export default function Navbar() {
                             to="/tarifas"
                             onClick={() => setMenuAbierto(false)}
                             className={({ isActive }) =>
-                                `no-underline tracking-widest uppercase hover:scale-110 active:scale-95 transition-all duration-200 inline-block ${isActive ? 'text-white text-3xl font-marker' : 'text-brand-gold text-2xl'}`
+                                `no-underline tracking-widest uppercase hover:scale-110 active:scale-95 opacity-0 animate-[fadeUp_0.5s_cubic-bezier(0.22,1,0.36,1)_forwards] [animation-delay:450ms] transition-all duration-200 inline-block ${isActive ? 'text-white text-4xl font-marker' : 'text-brand-gold text-2xl'}`
                             }
                         >
                             Tarifas
@@ -146,7 +173,7 @@ export default function Navbar() {
                             to="/sobre-nosotros"
                             onClick={() => setMenuAbierto(false)}
                             className={({ isActive }) =>
-                                `no-underline tracking-widest uppercase hover:scale-110 active:scale-95 transition-all duration-200 inline-block ${isActive ? 'text-white text-3xl font-marker' : 'text-brand-gold text-2xl'}`
+                                `no-underline tracking-widest uppercase hover:scale-110 active:scale-95 opacity-0 animate-[fadeUp_0.5s_cubic-bezier(0.22,1,0.36,1)_forwards] [animation-delay:600ms] transition-all duration-200 inline-block ${isActive ? 'text-white text-4xl font-marker' : 'text-brand-gold text-2xl'}`
                             }
                         >
                             Sobre nosotros
@@ -157,7 +184,7 @@ export default function Navbar() {
                             to="/ubicacion"
                             onClick={() => setMenuAbierto(false)}
                             className={({ isActive }) =>
-                                `no-underline tracking-widest uppercase hover:scale-110 active:scale-95 transition-all duration-200 inline-block ${isActive ? 'text-white text-3xl font-marker' : 'text-brand-gold text-2xl'}`
+                                `no-underline tracking-widest uppercase hover:scale-110 active:scale-95 opacity-0 animate-[fadeUp_0.5s_cubic-bezier(0.22,1,0.36,1)_forwards] [animation-delay:750ms] transition-all duration-200 inline-block ${isActive ? 'text-white text-4xl font-marker' : 'text-brand-gold text-2xl'}`
                             }
                         >
                             Ubicación
@@ -168,7 +195,7 @@ export default function Navbar() {
                             to="/contacto"
                             onClick={() => setMenuAbierto(false)}
                             className={({ isActive }) =>
-                                `no-underline tracking-widest uppercase hover:scale-110 active:scale-95 transition-all duration-200 inline-block ${isActive ? 'text-white text-3xl font-marker' : 'text-brand-gold text-2xl'}`
+                                `no-underline tracking-widest uppercase hover:scale-110 active:scale-95 opacity-0 animate-[fadeUp_0.5s_cubic-bezier(0.22,1,0.36,1)_forwards] [animation-delay:900ms] transition-all duration-200 inline-block ${isActive ? 'text-white text-4xl font-marker' : 'text-brand-gold text-2xl'}`
                             }
                         >
                             Contacto
