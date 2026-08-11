@@ -140,7 +140,7 @@ export default function Navbar() {
                             to="/horarios"
                             onClick={() => setMenuAbierto(false)}
                             className={({ isActive }) =>
-                                `no-underline tracking-widest uppercase hover:scale-110 active:scale-95 opacity-0 animate-[fadeUp_0.5s_cubic-bezier(0.22,1,0.36,1)_forwards] [animation-delay:150ms] transition-all duration-200 inline-block ${isActive ? 'text-white text-4xl font-marker' : 'text-brand-gold text-2xl'}`
+                                `no-underline tracking-widest uppercase hover:scale-110 active:scale-95 opacity-0 animate-[fadeUp_0.5s_cubic-bezier(0.22,1,0.36,1)_forwards] [animation-delay:100ms] transition-all duration-200 inline-block ${isActive ? 'text-white text-4xl font-marker' : 'text-brand-gold text-2xl'}`
                             }
                         >
                             Horarios
@@ -151,7 +151,7 @@ export default function Navbar() {
                             to="/servicios"
                             onClick={() => setMenuAbierto(false)}
                             className={({ isActive }) =>
-                                `no-underline tracking-widest uppercase hover:scale-110 active:scale-95 opacity-0 animate-[fadeUp_0.5s_cubic-bezier(0.22,1,0.36,1)_forwards] [animation-delay:300ms] transition-all duration-200 inline-block ${isActive ? 'text-white text-4xl font-marker' : 'text-brand-gold text-2xl'}`
+                                `no-underline tracking-widest uppercase hover:scale-110 active:scale-95 opacity-0 animate-[fadeUp_0.5s_cubic-bezier(0.22,1,0.36,1)_forwards] [animation-delay:200ms] transition-all duration-200 inline-block ${isActive ? 'text-white text-4xl font-marker' : 'text-brand-gold text-2xl'}`
                             }
                         >
                             Servicios
@@ -162,7 +162,7 @@ export default function Navbar() {
                             to="/tarifas"
                             onClick={() => setMenuAbierto(false)}
                             className={({ isActive }) =>
-                                `no-underline tracking-widest uppercase hover:scale-110 active:scale-95 opacity-0 animate-[fadeUp_0.5s_cubic-bezier(0.22,1,0.36,1)_forwards] [animation-delay:450ms] transition-all duration-200 inline-block ${isActive ? 'text-white text-4xl font-marker' : 'text-brand-gold text-2xl'}`
+                                `no-underline tracking-widest uppercase hover:scale-110 active:scale-95 opacity-0 animate-[fadeUp_0.5s_cubic-bezier(0.22,1,0.36,1)_forwards] [animation-delay:300ms] transition-all duration-200 inline-block ${isActive ? 'text-white text-4xl font-marker' : 'text-brand-gold text-2xl'}`
                             }
                         >
                             Tarifas
@@ -173,7 +173,7 @@ export default function Navbar() {
                             to="/sobre-nosotros"
                             onClick={() => setMenuAbierto(false)}
                             className={({ isActive }) =>
-                                `no-underline tracking-widest uppercase hover:scale-110 active:scale-95 opacity-0 animate-[fadeUp_0.5s_cubic-bezier(0.22,1,0.36,1)_forwards] [animation-delay:600ms] transition-all duration-200 inline-block ${isActive ? 'text-white text-4xl font-marker' : 'text-brand-gold text-2xl'}`
+                                `no-underline tracking-widest uppercase hover:scale-110 active:scale-95 opacity-0 animate-[fadeUp_0.5s_cubic-bezier(0.22,1,0.36,1)_forwards] [animation-delay:400ms] transition-all duration-200 inline-block ${isActive ? 'text-white text-4xl font-marker' : 'text-brand-gold text-2xl'}`
                             }
                         >
                             Sobre nosotros
@@ -184,7 +184,7 @@ export default function Navbar() {
                             to="/ubicacion"
                             onClick={() => setMenuAbierto(false)}
                             className={({ isActive }) =>
-                                `no-underline tracking-widest uppercase hover:scale-110 active:scale-95 opacity-0 animate-[fadeUp_0.5s_cubic-bezier(0.22,1,0.36,1)_forwards] [animation-delay:750ms] transition-all duration-200 inline-block ${isActive ? 'text-white text-4xl font-marker' : 'text-brand-gold text-2xl'}`
+                                `no-underline tracking-widest uppercase hover:scale-110 active:scale-95 opacity-0 animate-[fadeUp_0.5s_cubic-bezier(0.22,1,0.36,1)_forwards] [animation-delay:500ms] transition-all duration-200 inline-block ${isActive ? 'text-white text-4xl font-marker' : 'text-brand-gold text-2xl'}`
                             }
                         >
                             Ubicación
@@ -195,7 +195,7 @@ export default function Navbar() {
                             to="/contacto"
                             onClick={() => setMenuAbierto(false)}
                             className={({ isActive }) =>
-                                `no-underline tracking-widest uppercase hover:scale-110 active:scale-95 opacity-0 animate-[fadeUp_0.5s_cubic-bezier(0.22,1,0.36,1)_forwards] [animation-delay:900ms] transition-all duration-200 inline-block ${isActive ? 'text-white text-4xl font-marker' : 'text-brand-gold text-2xl'}`
+                                `no-underline tracking-widest uppercase hover:scale-110 active:scale-95 opacity-0 animate-[fadeUp_0.5s_cubic-bezier(0.22,1,0.36,1)_forwards] [animation-delay:600ms] transition-all duration-200 inline-block ${isActive ? 'text-white text-4xl font-marker' : 'text-brand-gold text-2xl'}`
                             }
                         >
                             Contacto

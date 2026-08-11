@@ -1,7 +1,7 @@
 
 export const datos = {
     name: "217 GYM",
-    frase: "Entrena de verdad. Empieza hoy.",
+    frase: "El cambio no se desea, se entrena.",
     phone: {
         call: "600 000 000",
         whatsapp: "34600000000",

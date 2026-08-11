@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import heroImg from '../assets/chatgpt4.jpg'
 import { Link } from 'react-router-dom'
+import { datos } from '../config/datos'
 
 export default function Hero() {
     return (
@@ -10,7 +11,7 @@ export default function Hero() {
             <motion.img
                 src={heroImg}
                 alt="217 GYM"
-                className="absolute inset-0 w-full h-full object-cover brightness-[0.75]"
+                className="absolute inset-0 w-full h-full object-cover object-center sm:object-top brightness-[0.75]"
                 initial={{ scale: 1.1 }}
                 animate={{ scale: 1.15 }}
                 transition={{
@@ -38,14 +39,12 @@ export default function Hero() {
                         className="max-w-xl space-y-4 backdrop-blur-[1px]"
                     >
 
-                        <h1 className="
-                            text-white text-[28px] sm:text-[34px] md:text-[48px] lg:text-[56px] font-extrabold leading-[1.1] md:leading-[1.05] tracking-[-0.5px] md:tracking-[-1px] max-w-70 sm:max-w-85 md:max-w-125"
-                        >
+                        <h1 className="font-bebas text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-white whitespace-nowrap">
                             217 FUNCIONAL GYM
                         </h1>
 
-                        <p className="mt-4 text-gray-300 text-base sm:text-lg md:text-xl max-w-[90%] sm:max-w-[80%] drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
-                            Empieza desde cero. Resultados reales en semanas.
+                        <p className="mt-3 font-sans text-gray-300 text-base sm:text-lg md:text-xl max-w-lg font-medium tracking-wide">
+                            {datos.frase}
                         </p>
 
                         <div className="flex gap-4">
@@ -54,7 +53,7 @@ export default function Hero() {
                                 Empieza hoy
                             </Link>
 
-                            <Link to="/horarios" className="border border-white/30 text-white px-6 sm:px-8 py-3 rounded-lg text-base sm:text-lg hover:bg-white/10 active:scale-95 transition"
+                            <Link to="/horarios" className="border border-white/30 text-white bg-black/40 backdrop-blur-sm px-6 sm:px-8 py-3 rounded-lg text-base sm:text-lg hover:bg-white/10 active:scale-95 transition"
                             >
                                 Ver horarios
                             </Link>
