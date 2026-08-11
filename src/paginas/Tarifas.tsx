@@ -33,7 +33,7 @@ export default function Tarifas() {
                         viewport={{ once: true }}
                         className="text-gray-400 text-lg uppercase tracking-widest mb-7"
                     >
-                        Sin matricula · Sin permanencia
+                        Sin matrícula · Sin permanencia
                     </motion.p>
 
                     <motion.div
@@ -59,7 +59,7 @@ export default function Tarifas() {
                             variants={tarjetaVariants}
                             className="group bg-zinc-900/80 backdrop-blur-md p-8 rounded-2xl border border-zinc-800 shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-white/20"
                         >
-                            <p className="text-base text-gray-400 uppercase tracking-wide mb-3">Mensual</p>
+                            <p className="text-base text-gray-400 font-sans uppercase tracking-wide mb-3">Plan mensual</p>
                             <p className="text-4xl font-bold py-2">34,99 €</p>
                             <p className="text-sm text-gray-400 mt-1">al mes</p>
                         </motion.div>
