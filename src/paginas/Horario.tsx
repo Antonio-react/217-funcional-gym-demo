@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import type { Variants } from 'framer-motion'
 
-import horarioImg from '../assets/Horario.jpg'
+import horarioImg from '../assets/Horario.webp'
 
 const tarjetaVariants: Variants = {
     hidden: { opacity: 0, y: 40 },

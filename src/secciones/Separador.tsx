@@ -1,4 +1,4 @@
-import mancuernasImg from '../assets/Mancuernero Luces.jpg'
+import mancuernasImg from '../assets/Mancuernero Luces.webp'
 
 export default function Separador() {
     return (

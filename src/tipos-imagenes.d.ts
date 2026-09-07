@@ -3,7 +3,7 @@ declare module '*.PNG' {
     export default src
 }
 
-declare module '*.JPG' {
+declare module '*.webp' {
     const src: string
     export default src
 }

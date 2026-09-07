@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { datos } from '../config/datos'
 
-import heroImg from '../assets/Gym Interior.jpg'
+import heroImg from '../assets/Gym Interior.webp'
 
 export default function Hero() {
     return (

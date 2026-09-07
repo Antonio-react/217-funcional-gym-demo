@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import type { Variants } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
-import bannerImg from '../assets/Mancuernero.jpg'
+import bannerImg from '../assets/Mancuernero.webp'
 
 const tarjetaVariants: Variants = {
     hidden: { opacity: 0, y: 40 },

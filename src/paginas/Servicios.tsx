@@ -2,10 +2,10 @@ import { motion } from 'framer-motion'
 import type { Variants } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
-import bannerImg from '../assets/Servicios.jpg'
-import fitnessImg from '../assets/Sala musculacion.jpg'
-import functionalImg from '../assets/Clases Funcionales.jpg'
-import personalImg from '../assets/Personal Trainner.jpg'
+import bannerImg from '../assets/Servicios.webp'
+import fitnessImg from '../assets/Sala musculacion.webp'
+import functionalImg from '../assets/Clases Funcionales.webp'
+import personalImg from '../assets/Personal Trainner.webp'
 
 const tarjetaVariants: Variants = {
     hidden: { opacity: 0, y: 40 },
