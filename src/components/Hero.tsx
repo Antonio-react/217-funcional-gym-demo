@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion'
-import heroImg from '../assets/chatgpt4.jpg'
 import { Link } from 'react-router-dom'
 import { datos } from '../config/datos'
+
+import heroImg from '../assets/Gym Interior.jpg'
 
 export default function Hero() {
     return (

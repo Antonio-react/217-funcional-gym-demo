@@ -3,14 +3,14 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import type { Variants } from 'framer-motion'
 
-import bannerImg from '../assets/Funtional Training Men.JPG'
+import bannerImg from '../assets/Hero.jpg'
 import logoMarca from '../assets/Titanium Strength.png'
-import galeria1 from '../assets/Mancuernero Negro.WEBP'
-import galeria2 from '../assets/Mancuernero Luces.png'
-import galeria3 from '../assets/Fitness.WEBP'
-import galeria4 from '../assets/Personal Trainer.JPG'
-import galeria5 from '../assets/Funtional Training Group.JPG'
-import galeria6 from '../assets/Fitness Training Women.WEBP'
+import galeria1 from '../assets/Hero.jpg'
+import galeria2 from '../assets/Clases Funcionales.jpg'
+import galeria3 from '../assets/Personal Trainner.jpg'
+import galeria4 from '../assets/rueda.jpg'
+import galeria5 from '../assets/Servicios.jpg'
+import galeria6 from '../assets/Horario.jpg'
 
 
 const itemVariants: Variants = {
@@ -145,7 +145,7 @@ export default function SobreNosotros() {
                 </motion.h2>
 
                 {/* Version escritorio: grid + clic para ampliar */}
-                <div className="hidden md:grid grid-cols-3 gap-4 max-w-5xl mx-auto">
+                <div className="hidden md:grid grid-cols-3 gap-4 max-w-5xl mx-auto object-cover object-center">
                     {[galeria1, galeria2, galeria3, galeria4, galeria5, galeria6].map((foto, i) => (
                         <motion.div
                             key={i}
@@ -174,12 +174,12 @@ export default function SobreNosotros() {
                     className="flex md:hidden overflow-x-auto snap-x snap-mandatory gap-4 px-4 no-scrollbar"
                 >
                     {[galeria1, galeria2, galeria3, galeria4, galeria5, galeria6].map((foto, i) => (
-                        <div key={i} className="snap-center shrink-0 w-[85%] overflow-hidden rounded-xl">
+                        <div key={i} className="snap-center shrink-0 w-[85%] overflow-hidden rounded-xl ">
                             <img
                                 src={foto}
                                 alt="Instalaciones 217 GYM"
                                 onClick={() => setIndiceAmpliado(i)}
-                                className="w-full h-64 object-cover object-top cursor-pointer"
+                                className="w-full h-64 object-cover object-center cursor-pointer"
                             />
                         </div>
                     ))}

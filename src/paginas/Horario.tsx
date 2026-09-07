@@ -1,7 +1,8 @@
-import horarioImg from '../assets/Mancuernero Negro.WEBP'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import type { Variants } from 'framer-motion'
+
+import horarioImg from '../assets/Horario.jpg'
 
 const tarjetaVariants: Variants = {
     hidden: { opacity: 0, y: 40 },
@@ -38,17 +39,17 @@ export default function Horario() {
                             <p className="text-sm uppercase text-gray-400 mb-2">Lunes - Viernes</p>
                             <p className="text-2xl font-bold whitespace-nowrap">8:00 - 23:00</p>
                         </div>
-                        <div className="group bg-zinc-900/80 backdrop-blur-md p-6 rounded-2xl border border-zinc-800 shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-white/20">
+                        {/* <div className="group bg-zinc-900/80 backdrop-blur-md p-6 rounded-2xl border border-zinc-800 shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-white/20">
                             <p className="text-sm uppercase text-gray-400 mb-2">Sábado</p>
                             <p className="text-2xl font-bold whitespace-nowrap">9:00 - 19:00</p>
-                        </div>
+                        </div> */}
                         <div className="group bg-zinc-900/80 backdrop-blur-md p-6 rounded-2xl border border-zinc-800 shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-white/20">
-                            <p className="text-sm uppercase text-gray-400 mb-2">Domingo</p>
+                            <p className="text-sm uppercase text-gray-400 mb-2">Sábado - Domingo</p>
                             <p className="text-2xl font-bold whitespace-nowrap">9:00 - 14:00</p>
                         </div>
                         <Link to="/tarifas" className="w-full mx-auto bg-zinc-900/80 backdrop-blur-md p-6 rounded-2xl border border-zinc-800 shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-brand-gold text-center flex flex-col">
                             <p className="text-lg uppercase tracking-wide text-brand-gold mb-3">Plan de Mañana</p>
-                            <p className="text-3xl font-bold mb-2">8:00 - 15:45</p>
+                            <p className="text-3xl font-bold mb-2">8:00 - 15:00</p>
                             <p className="text-xs uppercase text-brand-gold">* Tarifa Especial</p>
                         </Link>
                     </motion.div>
@@ -68,18 +69,18 @@ export default function Horario() {
                             <p className="text-sm uppercase text-gray-400 mb-2">Lunes - Viernes</p>
                             <p className="text-2xl md:text-3xl font-bold whitespace-nowrap">8:00 - 23:00</p>
                         </motion.div>
-                        <motion.div variants={tarjetaVariants} className="group bg-zinc-900/80 backdrop-blur-md p-6 rounded-2xl border border-zinc-800 shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-white/20">
+                        {/* <motion.div variants={tarjetaVariants} className="group bg-zinc-900/80 backdrop-blur-md p-6 rounded-2xl border border-zinc-800 shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-white/20">
                             <p className="text-sm uppercase text-gray-400 mb-2">Sábado</p>
                             <p className="text-2xl md:text-3xl font-bold whitespace-nowrap">9:00 - 19:00</p>
-                        </motion.div>
+                        </motion.div> */}
                         <motion.div variants={tarjetaVariants} className="group bg-zinc-900/80 backdrop-blur-md p-6 rounded-2xl border border-zinc-800 shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-white/20">
-                            <p className="text-sm uppercase text-gray-400 mb-2">Domingo</p>
+                            <p className="text-sm uppercase text-gray-400 mb-2">Sábado - Domingo</p>
                             <p className="text-2xl md:text-3xl font-bold whitespace-nowrap">9:00 - 14:00</p>
                         </motion.div>
-                        <motion.div variants={tarjetaVariants} className="col-span-3">
+                        <motion.div variants={tarjetaVariants}>
                             <Link to="/tarifas" className="w-full mx-auto md:max-w-sm bg-zinc-900/80 backdrop-blur-md p-6 rounded-2xl border border-zinc-800 shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-brand-gold text-center flex flex-col">
-                                <p className="text-lg uppercase tracking-wide text-brand-gold mb-3">Plan de Mañana</p>
-                                <p className="text-3xl font-bold mb-2">8:00 - 15:45</p>
+                                <p className="text-sm uppercase tracking-wide text-brand-gold mb-3">Plan de Mañana</p>
+                                <p className="text-2xl md:text-3xl font-bold whitespace-nowrap mb-2">8:00 - 15:00</p>
                                 <p className="text-xs uppercase text-brand-gold">* Tarifa Especial</p>
                             </Link>
                         </motion.div>
@@ -106,10 +107,10 @@ export default function Horario() {
                             viewport={{ once: true }}
                         >
                             <Link to="/servicios" className="group bg-zinc-900/80 backdrop-blur-md p-6 rounded-2xl border border-zinc-800 shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-brand-gold text-center block">
-                                <p className="text-lg font-bold uppercase tracking-wide text-brand-gold mb-3">Functional Training</p>
-                                <p className="text-base text-gray-400 mb-2">Martes y Jueves</p>
-                                <p className="text-2xl font-bold">17:00 - 18:00</p>
-                                <p className="text-2xl font-bold mt-1">20:00 - 21:00</p>
+                                <p className="text-lg font-bold uppercase tracking-wide text-brand-gold mb-3">Clases Funcionales</p>
+                                <p className="text-base text-gray-400 mb-2">Próximamente...</p>
+                                {/* <p className="text-2xl font-bold">17:00 - 18:00</p>
+                                <p className="text-2xl font-bold mt-1">20:00 - 21:00</p> */}
                             </Link>
                             <Link to="/servicios" className="group bg-zinc-900/80 backdrop-blur-md p-6 rounded-2xl border border-zinc-800 shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-brand-gold text-center flex flex-col">
                                 <p className="text-lg font-bold uppercase tracking-wide text-brand-gold mb-3">Personal Trainer</p>
@@ -130,16 +131,16 @@ export default function Horario() {
                         >
                             <motion.div variants={tarjetaVariants}>
                                 <Link to="/servicios" className="group bg-zinc-900/80 backdrop-blur-md p-6 rounded-2xl border border-zinc-800 shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-brand-gold text-center block">
-                                    <p className="text-lg font-bold uppercase tracking-wide text-brand-gold mb-3">Functional Training</p>
-                                    <p className="text-base text-gray-400 mb-2">Martes y Jueves</p>
-                                    <p className="text-2xl font-bold">17:00 - 18:00</p>
-                                    <p className="text-2xl font-bold mt-1">20:00 - 21:00</p>
+                                    <p className="text-lg font-bold uppercase tracking-wide text-brand-gold mb-3">Clases Funcionales</p>
+                                    <p className="text-base text-gray-400 mt-6">Próximamente...</p>
+                                    {/* <p className="text-2xl font-bold">17:00 - 18:00</p>
+                                    <p className="text-2xl font-bold mt-1">20:00 - 21:00</p> */}
                                 </Link>
                             </motion.div>
                             <motion.div variants={tarjetaVariants}>
                                 <Link to="/servicios" className="group bg-zinc-900/80 backdrop-blur-md p-6 rounded-2xl border border-zinc-800 shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-brand-gold text-center flex flex-col">
                                     <p className="text-lg font-bold uppercase tracking-wide text-brand-gold mb-3">Personal Trainer</p>
-                                    <p className="text-sm text-gray-400 mt-6">Consultar horario y disponibilidad</p>
+                                    <p className="text-sm text-gray-400 mt-4">Consultar horario y disponibilidad</p>
                                 </Link>
                             </motion.div>
                         </motion.div>

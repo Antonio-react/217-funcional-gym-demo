@@ -44,10 +44,10 @@ export default function Footer() {
                             </svg>
                             WhatsApp
                         </a>
-                        <a 
-                            href={`https://instagram.com/${datos.instagram}`} 
-                            target="_blank" 
-                            rel="noopener noreferrer" 
+                        <a
+                            href={`https://instagram.com/${datos.instagram}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="flex items-center gap-2 text-sm no-underline text-gray-400 hover:text-brand-gold transition-colors py-1"
                         >
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-gold">
@@ -71,7 +71,7 @@ export default function Footer() {
 
             <div className="max-w-5xl mx-auto border-t border-gray-800 mt-10 pt-4 text-center">
                 <p className="text-xs -mb-2 text-gray-500">
-                    © {new Date().getFullYear()} - 217 FUNCIONAL GYM. Todos los derechos reservados.
+                    © {new Date().getFullYear()} | 217 FUNCIONAL GYM. Todos los derechos reservados.
                 </p>
             </div>
         </footer>

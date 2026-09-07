@@ -50,30 +50,31 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className={`fixed top-0 left-0 w-full z-50 flex items-center gap-6 px-4 md:px-6 py-3 transition-all duration-300 ${visible ? 'translate-y-0' : '-translate-y-full'} ${menuAbierto ? 'bg-black' : ultimoScroll > 80 ? 'bg-black/40 backdrop-blur-md' : 'bg-transparent'}`}>
+            <nav className={`fixed top-0 left-0 w-full md:left-1/2 md:top-6 md:w-auto md:-translate-x-1/2 md:rounded-full md:border md:shadow-xl z-50 flex items-center gap-6 px-4 md:px-10 py-3 transition-all duration-300 ${visible ? 'translate-y-0' : '-translate-y-full md:-translate-y-[calc(100%+1.5rem)]'} ${menuAbierto ? 'bg-black' : ultimoScroll > 80 ? 'bg-black/40 backdrop-blur-md' : 'bg-transparent'} md:bg-transparent! md:backdrop-blur-lg md:backdrop-saturate-150 md:border-white/8`}>
 
-                <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="border-none bg-transparent p-0 cursor-pointer relative z-50">
-                    <img src="/217-gym.PNG" alt="217 GYM" className="h-14 w-auto block hover:scale-110" />
+                <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="border-none bg-transparent p-0 cursor-pointer relative z-50 shrink-0">
+                    <img alt="217 GYM" src="/217-gym.PNG" className="h-14 md:hidden block hover:scale-110" />
+                    <img alt="217 GYM" src="/217.PNG" className="hidden md:block h-9 hover:scale-110" style={{ aspectRatio: '1024 / 1024' }} />
                 </Link>
 
-                <ul className="hidden md:flex gap-10 list-none">
+                <ul className="hidden md:flex gap-8 list-none whitespace-nowrap">
                     <li>
-                        <NavLink to="/horarios" className={({ isActive }) => `relative inline-block text-base no-underline pb-1 transition-colors duration-200 ${isActive ? 'text-brand-gold' : 'text-white hover:text-brand-gold'} after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-px after:bg-brand-gold after:transition-all after:duration-300 ${isActive ? 'after:w-full' : 'after:w-0 hover:after:w-full'}`}>Horarios</NavLink>
+                        <NavLink to="/horarios" className={({ isActive }) => `text-base no-underline transition-colors duration-200 ${isActive ? 'text-brand-gold' : 'text-white hover:text-brand-gold'}`}>Horarios</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/servicios" className={({ isActive }) => `relative inline-block text-base no-underline pb-1 transition-colors duration-200 ${isActive ? 'text-brand-gold' : 'text-white hover:text-brand-gold'} after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-px after:bg-brand-gold after:transition-all after:duration-300 ${isActive ? 'after:w-full' : 'after:w-0 hover:after:w-full'}`}>Servicios</NavLink>
+                        <NavLink to="/servicios" className={({ isActive }) => `text-base no-underline transition-colors duration-200 ${isActive ? 'text-brand-gold' : 'text-white hover:text-brand-gold'}`}>Servicios</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/tarifas" className={({ isActive }) => `relative inline-block text-base no-underline pb-1 transition-colors duration-200 ${isActive ? 'text-brand-gold' : 'text-white hover:text-brand-gold'} after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-px after:bg-brand-gold after:transition-all after:duration-300 ${isActive ? 'after:w-full' : 'after:w-0 hover:after:w-full'}`}>Tarifas</NavLink>
+                        <NavLink to="/tarifas" className={({ isActive }) => `text-base no-underline transition-colors duration-200 ${isActive ? 'text-brand-gold' : 'text-white hover:text-brand-gold'}`}>Tarifas</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/sobre-nosotros" className={({ isActive }) => `relative inline-block text-base no-underline pb-1 transition-colors duration-200 ${isActive ? 'text-brand-gold' : 'text-white hover:text-brand-gold'} after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-px after:bg-brand-gold after:transition-all after:duration-300 ${isActive ? 'after:w-full' : 'after:w-0 hover:after:w-full'}`}>Sobre nosotros</NavLink>
+                        <NavLink to="/sobre-nosotros" className={({ isActive }) => `text-base no-underline transition-colors duration-200 ${isActive ? 'text-brand-gold' : 'text-white hover:text-brand-gold'}`}>Sobre nosotros</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/ubicacion" className={({ isActive }) => `relative inline-block text-base no-underline pb-1 transition-colors duration-200 ${isActive ? 'text-brand-gold' : 'text-white hover:text-brand-gold'} after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-px after:bg-brand-gold after:transition-all after:duration-300 ${isActive ? 'after:w-full' : 'after:w-0 hover:after:w-full'}`}>Ubicación</NavLink>
+                        <NavLink to="/ubicacion" className={({ isActive }) => `text-base no-underline transition-colors duration-200 ${isActive ? 'text-brand-gold' : 'text-white hover:text-brand-gold'}`}>Ubicación</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/contacto" className={({ isActive }) => `relative inline-block text-base no-underline pb-1 transition-colors duration-200 ${isActive ? 'text-brand-gold' : 'text-white hover:text-brand-gold'} after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-px after:bg-brand-gold after:transition-all after:duration-300 ${isActive ? 'after:w-full' : 'after:w-0 hover:after:w-full'}`}>Contacto</NavLink>
+                        <NavLink to="/contacto" className={({ isActive }) => `text-base no-underline transition-colors duration-200 ${isActive ? 'text-brand-gold' : 'text-white hover:text-brand-gold'}`}>Contacto</NavLink>
                     </li>
                 </ul>
 

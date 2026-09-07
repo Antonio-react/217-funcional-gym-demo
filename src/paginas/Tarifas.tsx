@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion'
 import type { Variants } from 'framer-motion'
-import bannerImg from '../assets/Mancuernero Luces.png'
 import { Link } from 'react-router-dom'
+
+import bannerImg from '../assets/Mancuernero.jpg'
 
 const tarjetaVariants: Variants = {
     hidden: { opacity: 0, y: 40 },
@@ -60,7 +61,7 @@ export default function Tarifas() {
                             className="group bg-zinc-900/80 backdrop-blur-md p-8 rounded-2xl border border-zinc-800 shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-white/20"
                         >
                             <p className="text-base text-gray-400 font-sans uppercase tracking-wide mb-3">Plan mensual</p>
-                            <p className="text-4xl font-bold py-2">34,99 €</p>
+                            <p className="text-4xl font-bold py-2">35 €</p>
                             <p className="text-sm text-gray-400 mt-1">al mes</p>
                         </motion.div>
 
@@ -72,9 +73,9 @@ export default function Tarifas() {
                                 Ahorra 9 €
                             </span>
                             <p className="text-base text-gray-400 uppercase tracking-wide mb-3">Plan 3 meses</p>
-                            <p className="text-4xl font-bold text-brand-gold-dark">31,99 €</p>
+                            <p className="text-4xl font-bold text-brand-gold-dark">32 €</p>
                             <p className="text-sm text-gray-400 mt-1">al mes</p>
-                            <p className="text-sm text-gray-500 mt-2">95,97 € pago unico</p>
+                            <p className="text-sm text-gray-500 mt-2">96 € pago único</p>
                         </motion.div>
 
                         <motion.div
@@ -85,9 +86,9 @@ export default function Tarifas() {
                                 Ahorra 30 €
                             </span>
                             <p className="text-base text-gray-400 uppercase tracking-wide mb-3">Plan 6 meses</p>
-                            <p className="text-4xl font-bold text-brand-gold">29,99 €</p>
+                            <p className="text-4xl font-bold text-brand-gold">30 €</p>
                             <p className="text-sm text-gray-400 mt-1">al mes</p>
-                            <p className="text-sm text-gray-500 mt-2">179,94 € pago unico</p>
+                            <p className="text-sm text-gray-500 mt-2">180 € pago único</p>
                         </motion.div>
 
                         <motion.div

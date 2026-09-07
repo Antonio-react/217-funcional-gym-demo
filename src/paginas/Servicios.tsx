@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion'
 import type { Variants } from 'framer-motion'
-import bannerImg from '../assets/Funtional Training Men.JPG'
-import fitnessImg from '../assets/Fitness.WEBP'
-import functionalImg from '../assets/Funtional Training Group.JPG'
-import personalImg from '../assets/Personal Trainer.JPG'
 import { Link } from 'react-router-dom'
+
+import bannerImg from '../assets/Servicios.jpg'
+import fitnessImg from '../assets/Sala musculacion.jpg'
+import functionalImg from '../assets/Clases Funcionales.jpg'
+import personalImg from '../assets/Personal Trainner.jpg'
 
 const tarjetaVariants: Variants = {
     hidden: { opacity: 0, y: 40 },
@@ -15,7 +16,7 @@ export default function Servicios() {
     return (
         <>
             <section
-                className="relative h-[60vh] bg-cover bg-top"
+                className="relative h-[60vh] bg-cover bg-center"
                 style={{ backgroundImage: `url(${bannerImg})` }}
             >
                 <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/40 to-black" />
@@ -58,10 +59,10 @@ export default function Servicios() {
                             className="group bg-zinc-900/80 backdrop-blur-md rounded-2xl border border-zinc-800 shadow-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-white/20"
                         >
                             <div className="overflow-hidden">
-                                <img src={functionalImg} alt="Functional Training" className="w-full h-48 object-cover object-top transition-transform duration-300 group-hover:scale-110" />
+                                <img src={functionalImg} alt="Functional Training" className="w-full h-48 object-cover object-center transition-transform duration-300 group-hover:scale-110" />
                             </div>
                             <div className="p-6 text-center">
-                                <p className="text-lg font-bold uppercase tracking-wide mb-2">Functional Training</p>
+                                <p className="text-lg font-bold uppercase tracking-wide mb-2">Clases Funcionales</p>
                                 <p className="text-sm text-gray-400 text-justify">Entrenamientos funcionales en grupo para mejorar tu rendimiento y movilidad. Adaptado a tu nivel actual.</p>
                             </div>
                         </motion.div>
@@ -97,9 +98,9 @@ export default function Servicios() {
                         </Link>
 
                         <div className="snap-center shrink-0 w-[85%] bg-zinc-900/80 backdrop-blur-md rounded-2xl border border-zinc-800 shadow-xl overflow-hidden">
-                            <img src={functionalImg} alt="Functional Training" className="w-full h-48 object-cover object-top" />
+                            <img src={functionalImg} alt="Functional Training" className="w-full h-48 object-cover object-center" />
                             <div className="p-6 text-center">
-                                <p className="text-lg font-bold uppercase tracking-wide mb-2">Functional Training</p>
+                                <p className="text-lg font-bold uppercase tracking-wide mb-2">Clases funcionales</p>
                                 <p className="text-sm text-gray-400 text-justify">Entrenamientos funcionales en grupo para mejorar tu rendimiento y movilidad. Adaptado a tu nivel actual.</p>
                             </div>
                         </div>

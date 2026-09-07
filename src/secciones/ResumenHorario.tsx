@@ -37,14 +37,7 @@ export default function ResumenHorario() {
                 </motion.div>
 
                 <motion.div variants={itemVariants} className="flex flex-col items-center justify-center md:flex-1 md:px-4 lg:px-10 xl:px-16">
-                    <p className="text-sm text-gray-400 uppercase tracking-wide">Sábado</p>
-                    <div className="h-14 flex items-center">
-                        <p className="text-2xl font-bold text-white whitespace-nowrap">9:00 - 19:00</p>
-                    </div>
-                </motion.div>
-
-                <motion.div variants={itemVariants} className="flex flex-col items-center justify-center md:flex-1 md:px-4 lg:px-10 xl:px-16">
-                    <p className="text-sm text-gray-400 uppercase tracking-wide">Domingo</p>
+                    <p className="text-sm text-gray-400 uppercase tracking-wide">Sábado - Domingo</p>
                     <div className="h-14 flex items-center">
                         <p className="text-2xl font-bold text-white whitespace-nowrap">9:00 - 14:00</p>
                     </div>

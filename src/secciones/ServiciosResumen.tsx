@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import type { Variants } from 'framer-motion'
-import fitnessImg from '../assets/Fitness.WEBP'
-import functionalImg from '../assets/Funtional Training Group.JPG'
-import personalImg from '../assets/Personal Trainer.JPG'
+
+import fitnessImg from '../assets/Sala musculacion.jpg'
+import functionalImg from '../assets/Clases Funcionales.jpg'
+import personalImg from '../assets/Personal Trainner.jpg'
 
 const itemVariants: Variants = {
     hidden: { opacity: 0, y: 40 },
@@ -51,7 +52,7 @@ export default function ServiciosResumen() {
                             <img src={functionalImg} alt="Functional Training" className="w-full h-64 object-cover transition-transform duration-300 hover:scale-110" />
                         </div>
                         <p className="text-center text-white text-lg font-semibold uppercase tracking-wide py-4">
-                            Functional Training
+                            Clases Funcionales
                         </p>
                     </Link>
                 </motion.div>
@@ -90,7 +91,7 @@ export default function ServiciosResumen() {
                         <img src={functionalImg} alt="Functional Training" className="w-full h-64 object-cover rounded-xl" />
                     </div>
                     <p className="text-center text-white text-lg font-semibold uppercase tracking-wide py-4">
-                        Functional Training
+                        Clases Funcionales
                     </p>
                 </Link>
 

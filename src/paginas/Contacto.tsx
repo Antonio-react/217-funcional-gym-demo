@@ -1,8 +1,9 @@
 import { Phone, Mail } from 'lucide-react'
-import bannerImg from '../assets/Fitness Training Women.WEBP'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { datos } from '../config/datos'
+
+import bannerImg from '../assets/Clases Funcionales.jpg'
 
 export default function Contacto() {
 
