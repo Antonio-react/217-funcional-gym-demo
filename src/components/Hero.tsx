@@ -12,6 +12,8 @@ export default function Hero() {
             <motion.img
                 src={heroImg}
                 alt="217 GYM"
+                fetchPriority="high"
+                loading="eager"
                 className="absolute inset-0 w-full h-full object-cover object-center sm:object-top brightness-[0.75]"
                 initial={{ scale: 1.1 }}
                 animate={{ scale: 1.15 }}

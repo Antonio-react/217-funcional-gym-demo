@@ -35,10 +35,14 @@ export default function SobreNosotros() {
 
     return (
         <>
-            <section
-                className="relative h-[60vh] bg-cover bg-center"
-                style={{ backgroundImage: `url(${bannerImg})` }}
-            >
+            <section className="relative h-[60vh] bg-cover bg-center overflow-hidden">
+                <img 
+                    src={bannerImg} 
+                    alt="Sobre nosotros" 
+                    fetchPriority="high"
+                    loading="eager"
+                    className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none" 
+                />
                 <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/40 to-black" />
                 <div className="absolute inset-0 flex items-center justify-center -translate-y-6">
                     <p className="text-white font-marker text-6xl sm:text-7xl md:text-8xl lg:text-9xl tracking-wider uppercase text-center">
