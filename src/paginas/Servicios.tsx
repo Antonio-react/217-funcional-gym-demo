@@ -118,6 +118,16 @@ export default function Servicios() {
                         </div>
                     </motion.div>
 
+                    <motion.p
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        viewport={{ once: true }}
+                        className="text-gray-400 text-sm text-center md:text-base mt-10 -mb-7"
+                    >
+                        Las <span className="text-brand-gold font-semibold">Clases Funcionales</span> y <span className="text-brand-gold font-semibold">Personal Trainer</span> se pagan por <span className="text-brand-gold">separado</span> (consultar tarifas y disponibilidad)
+                    </motion.p>
+
                 </div>
             </section>
         </>

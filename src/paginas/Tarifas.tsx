@@ -111,7 +111,7 @@ export default function Tarifas() {
                         viewport={{ once: true }}
                         className="text-gray-400 text-sm md:text-base mt-10 -mb-7"
                     >
-                        Las clases <span className="text-brand-gold font-semibold">Functional Training</span> y <span className="text-brand-gold font-semibold">Personal Trainer</span> se pagan por <span className="text-brand-gold">separado</span> (consultar tarifas y disponibilidad)
+                        Las <span className="text-brand-gold font-semibold">Clases Funcionales</span> y <span className="text-brand-gold font-semibold">Personal Trainer</span> se pagan por <span className="text-brand-gold">separado</span> (consultar tarifas y disponibilidad)
                     </motion.p>
 
                 </div>
