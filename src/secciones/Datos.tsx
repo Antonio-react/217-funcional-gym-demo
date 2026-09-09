@@ -44,7 +44,8 @@ export default function Datos() {
 
                 <motion.div variants={itemVariants} className="flex flex-col items-center flex-1 justify-start min-[600px]:px-1 md:px-4 lg:px-8 xl:px-14">
                     <div className="h-16 flex items-center justify-center">
-                        <img src={logoMarca} alt="Titanium Strength" loading="lazy" className="h-32 w-auto" />
+                        <img src={logoMarca} alt="Titanium Strength" width="250"
+                            height="250" className="h-32 w-auto" />
                     </div>
                     <div className="h-8 flex items-center justify-center">
                         <p className="text-sm text-gray-400 uppercase tracking-wide">Equipamiento</p>
@@ -80,7 +81,8 @@ export default function Datos() {
                 </div>
 
                 <div className="flex flex-col items-center justify-center gap-1">
-                    <img src={logoMarca} alt="Titanium Strength" loading="lazy" className="h-28 w-auto" />
+                    <img src={logoMarca} alt="Titanium Strength" width="250"
+                        height="250" className="h-28 w-auto" />
                     <p className="text-xs text-gray-400 uppercase tracking-wide -mt-4 -mb-6">Equipamiento</p>
                 </div>
 

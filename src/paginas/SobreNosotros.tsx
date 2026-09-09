@@ -3,7 +3,8 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import type { Variants } from 'framer-motion'
 
-import bannerImg from '../assets/Barra-desktop.webp'
+import bannerDesktop from '../assets/Barra-desktop.webp'
+import bannerMobile from '../assets/Barra-mobile.webp'
 import logoMarca from '../assets/Titanium Strength.webp'
 import galeria1 from '../assets/Barra-mobile.webp'
 import galeria2 from '../assets/Clases Funcionales-mobile.webp'
@@ -36,13 +37,18 @@ export default function SobreNosotros() {
     return (
         <>
             <section className="relative h-[60vh] bg-cover bg-center overflow-hidden">
-                <img
-                    src={bannerImg}
-                    alt="Sobre nosotros"
-                    fetchPriority="high"
-                    loading="eager"
-                    className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
-                />
+                <picture className="absolute inset-0 w-full h-full pointer-events-none">
+                    <source media="(min-width: 768px)" srcSet={bannerDesktop} width="1920" height="1080" />
+                    <img 
+                        src={bannerMobile} 
+                        alt="Servicios y instalaciones de 217 GYM"
+                        fetchPriority="high"
+                        loading="eager"
+                        width="800"
+                        height="1200"
+                        className="w-full h-full object-cover object-center pointer-events-none"
+                    />
+                </picture>
                 <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/40 to-black" />
                 <div className="absolute inset-0 flex items-center justify-center -translate-y-6">
                     <p className="text-white font-marker text-6xl sm:text-6xl md:text-7xl lg:text-8xl tracking-wider uppercase text-center">
@@ -93,7 +99,11 @@ export default function SobreNosotros() {
                         <p className="text-xs text-gray-400 text-center uppercase tracking-wide mt-1">Equipamiento Profesional</p>
                     </div>
                     <div className="flex flex-col items-center justify-center gap-1">
-                        <img src={logoMarca} alt="Titanium Strength" loading="lazy" className="h-28 w-auto" />
+                        <img src={logoMarca} 
+                            alt="Titanium Strength" width="250"                             
+                            height="250" 
+                            loading="lazy" 
+                            className="h-28 w-auto" />
                         <p className="text-xs text-gray-400 text-center uppercase tracking-wide -mt-3 -py-2">Equipamiento</p>
                     </div>
                 </motion.div>
@@ -129,7 +139,12 @@ export default function SobreNosotros() {
                     </motion.div>
                     <motion.div variants={itemVariants} className="flex-1 flex flex-col items-center justify-center min-[600px]:px-2 md:px-6 lg:px-12">
                         <div className="h-16 flex items-center">
-                            <img src={logoMarca} alt="Titanium Strength" loading="lazy" className="h-28 w-auto" />
+                            <img src={logoMarca} 
+                            alt="Titanium Strength" 
+                            width="250" 
+                            height="250"
+                            loading="lazy" 
+                            className="h-28 w-auto" />
                         </div>
                         <p className="text-sm text-gray-400 uppercase tracking-wide mt-2">Equipamiento</p>
                     </motion.div>

@@ -2,7 +2,9 @@ import { useState } from 'react'
 import { MapPin, Car } from 'lucide-react'
 import { motion } from 'framer-motion'
 
-import bannerImg from '../assets/Horario-desktop.webp'
+import bannerDesktop from '../assets/Horario-desktop.webp'
+import bannerMobile from '../assets/Horario-mobile.webp'
+
 import fotoGimnasio from '../assets/Gym Interior-mobile.webp'
 
 export default function Ubicacion() {
@@ -11,13 +13,18 @@ export default function Ubicacion() {
     return (
         <>
             <section className="relative h-[60vh] bg-cover bg-center overflow-hidden">
-                <img 
-                    src={bannerImg} 
-                    alt="Ubicación" 
-                    fetchPriority="high"
-                    loading="eager"
-                    className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none" 
-                />
+                <picture className="absolute inset-0 w-full h-full pointer-events-none">
+                    <source media="(min-width: 768px)" srcSet={bannerDesktop} width="1920" height="1080" />
+                    <img 
+                        src={bannerMobile} 
+                        alt="Mapa y acceso exterior a 217 GYM"
+                        fetchPriority="high"
+                        loading="eager"
+                        width="800"
+                        height="1200"
+                        className="w-full h-full object-cover object-center pointer-events-none"
+                    />
+                </picture>
                 <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/40 to-black" />
                 <div className="absolute inset-0 flex items-center justify-center -translate-y-6">
                     <p className="text-white font-marker text-6xl sm:text-7xl md:text-8xl lg:text-9xl tracking-wider uppercase text-center">
