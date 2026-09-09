@@ -38,7 +38,12 @@ export default function ServiciosResumen() {
                 <motion.div variants={itemVariants} className="w-1/3">
                     <Link to="/sobre-nosotros" className="no-underline">
                         <div className="overflow-hidden rounded-2xl">
-                            <img src={fitnessImg} alt="Sala de musculacion" className="w-full h-64 object-cover transition-transform duration-300 hover:scale-110" />
+                            <img src={fitnessImg} 
+                            alt="Sala de musculacion" 
+                            loading="lazy"
+                            width="1200"
+                            height="1800"
+                            className="w-full h-64 object-cover transition-transform duration-300 hover:scale-110" />
                         </div>
                         <p className="text-center text-white text-lg font-semibold uppercase tracking-wide py-4">
                             Sala de musculación
@@ -49,7 +54,12 @@ export default function ServiciosResumen() {
                 <motion.div variants={itemVariants} className="w-1/3">
                     <Link to="/servicios" className="no-underline">
                         <div className="overflow-hidden rounded-2xl">
-                            <img src={functionalImg} alt="Functional Training" className="w-full h-64 object-cover transition-transform duration-300 hover:scale-110" />
+                            <img src={functionalImg} 
+                            alt="Functional Training" 
+                            loading="lazy"
+                            width="1200"
+                            height="1800"
+                            className="w-full h-64 object-cover transition-transform duration-300 hover:scale-110" />
                         </div>
                         <p className="text-center text-white text-lg font-semibold uppercase tracking-wide py-4">
                             Clases Funcionales
@@ -60,7 +70,12 @@ export default function ServiciosResumen() {
                 <motion.div variants={itemVariants} className="w-1/3">
                     <Link to="/servicios" className="no-underline">
                         <div className="overflow-hidden rounded-2xl">
-                            <img src={personalImg} alt="Personal Trainer" className="w-full h-64 object-cover transition-transform duration-300   hover:scale-110" />
+                            <img src={personalImg} 
+                            loading="lazy"
+                            width="1200"
+                            height="1800"
+                            alt="Personal Trainer" 
+                            className="w-full h-64 object-cover transition-transform duration-300   hover:scale-110" />
                         </div>
                         <p className="text-center text-white text-lg font-semibold uppercase tracking-wide py-4">
                             Personal Trainer
@@ -79,7 +94,11 @@ export default function ServiciosResumen() {
             >
                 <Link to="/sobre-nosotros" className="snap-center shrink-0 w-[85%] no-underline">
                     <div className="overflow-hidden rounded-xl">
-                        <img src={fitnessImg} alt="Sala de musculacion" className="w-full h-64 object-cover" />
+                        <img src={fitnessImg} 
+                        loading="lazy"
+                        width="1200"
+                        height="1800"
+                        alt="Sala de musculacion" className="w-full h-64 object-cover" />
                     </div>
                     <p className="text-center text-white text-lg font-semibold uppercase tracking-wide py-4">
                         Sala de musculación
@@ -88,7 +107,11 @@ export default function ServiciosResumen() {
 
                 <Link to="/servicios" className="snap-center shrink-0 w-[85%] no-underline">
                     <div className="overflow-hidden rounded-xl">
-                        <img src={functionalImg} alt="Functional Training" className="w-full h-64 object-cover" />
+                        <img src={functionalImg} 
+                        loading="lazy"
+                        width="1200"
+                        height="1800"
+                        alt="Functional Training" className="w-full h-64 object-cover" />
                     </div>
                     <p className="text-center text-white text-lg font-semibold uppercase tracking-wide py-4">
                         Clases Funcionales
@@ -97,7 +120,11 @@ export default function ServiciosResumen() {
 
                 <Link to="/servicios" className="snap-center shrink-0 w-[85%] no-underline">
                     <div className="overflow-hidden rounded-xl">
-                        <img src={personalImg} alt="Personal Trainer" className="w-full h-64 object-cover" />
+                        <img src={personalImg} 
+                        loading="lazy"
+                        width="1200"
+                        height="1800"
+                        alt="Personal Trainer" className="w-full h-64 object-cover" />
                     </div>
                     <p className="text-center text-white text-lg font-semibold uppercase tracking-wide py-4">
                         Personal Trainer

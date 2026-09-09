@@ -14,6 +14,8 @@ export default function Hero() {
                 alt="217 GYM"
                 fetchPriority="high"
                 loading="eager"
+                width="800" 
+                height="1200"
                 className="absolute inset-0 w-full h-full object-cover object-center sm:object-top brightness-[0.75]"
                 initial={{ scale: 1.1 }}
                 animate={{ scale: 1.15 }}
