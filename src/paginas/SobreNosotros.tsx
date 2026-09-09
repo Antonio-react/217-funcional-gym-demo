@@ -45,7 +45,7 @@ export default function SobreNosotros() {
                 />
                 <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/40 to-black" />
                 <div className="absolute inset-0 flex items-center justify-center -translate-y-6">
-                    <p className="text-white font-marker text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-wider uppercase text-center">
+                    <p className="text-white font-marker text-6xl sm:text-6xl md:text-7xl lg:text-8xl tracking-wider uppercase text-center">
                         Sobre nosotros
                     </p>
                 </div>
