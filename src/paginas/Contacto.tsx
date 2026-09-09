@@ -119,7 +119,7 @@ export default function Contacto() {
                         </div>
                         <button
                             type="submit"
-                            className="border-2 border-brand-gold text-brand-gold bg-brand-gold/10 px-6 py-3 font-semibold uppercase tracking-widest hover:bg-brand-gold hover:text-black active:bg-brand-gold active:text-black active:scale-95 transition-all duration-200"
+                            className="cursor-pointer border-2 border-brand-gold text-brand-gold bg-brand-gold/10 px-6 py-3 font-semibold uppercase tracking-widest hover:bg-brand-gold hover:text-black active:bg-brand-gold active:text-black active:scale-95 transition-all duration-200"
                         >
                             Enviar por WhatsApp
                         </button>

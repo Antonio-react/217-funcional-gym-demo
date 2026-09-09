@@ -93,7 +93,7 @@ export default function SobreNosotros() {
                         <p className="text-xs text-gray-400 text-center uppercase tracking-wide mt-1">Equipamiento Profesional</p>
                     </div>
                     <div className="flex flex-col items-center justify-center gap-1">
-                        <img src={logoMarca} alt="Titanium Strength" className="h-28 w-auto" />
+                        <img src={logoMarca} alt="Titanium Strength" loading="lazy" className="h-28 w-auto" />
                         <p className="text-xs text-gray-400 text-center uppercase tracking-wide -mt-3 -py-2">Equipamiento</p>
                     </div>
                 </motion.div>
@@ -129,7 +129,7 @@ export default function SobreNosotros() {
                     </motion.div>
                     <motion.div variants={itemVariants} className="flex-1 flex flex-col items-center justify-center min-[600px]:px-2 md:px-6 lg:px-12">
                         <div className="h-16 flex items-center">
-                            <img src={logoMarca} alt="Titanium Strength" className="h-28 w-auto" />
+                            <img src={logoMarca} alt="Titanium Strength" loading="lazy" className="h-28 w-auto" />
                         </div>
                         <p className="text-sm text-gray-400 uppercase tracking-wide mt-2">Equipamiento</p>
                     </motion.div>
@@ -162,6 +162,7 @@ export default function SobreNosotros() {
                             <img
                                 src={foto}
                                 alt="Instalaciones 217 GYM"
+                                loading="lazy"
                                 onClick={() => setIndiceAmpliado(i)}
                                 className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110 cursor-pointer"
                             />
@@ -182,6 +183,7 @@ export default function SobreNosotros() {
                             <img
                                 src={foto}
                                 alt="Instalaciones 217 GYM"
+                                loading="lazy"
                                 onClick={() => setIndiceAmpliado(i)}
                                 className="w-full h-64 object-cover object-center cursor-pointer"
                             />
