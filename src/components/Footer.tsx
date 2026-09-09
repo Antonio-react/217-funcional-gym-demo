@@ -9,7 +9,13 @@ export default function Footer() {
             <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-10 text-center md:text-left">
 
                 <div className="flex flex-col items-center md:items-start gap-3">
-                    <img src="/217-gym.PNG" alt="217 GYM" className="h-14 w-auto" />
+                    <img 
+                        src="/217-gym.webp" 
+                        alt="217 GYM" 
+                        width="400"
+                        height="234"
+                        className="h-14 w-auto object-contain" 
+                    />
                     <p className="text-sm uppercase mb-2">{datos.frase}</p>
                 </div>
 
