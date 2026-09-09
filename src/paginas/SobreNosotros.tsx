@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import type { Variants } from 'framer-motion'
 
 import bannerImg from '../assets/Barra-desktop.webp'
-import logoMarca from '../assets/Titanium Strength.png'
+import logoMarca from '../assets/Titanium Strength.webp'
 import galeria1 from '../assets/Barra-mobile.webp'
 import galeria2 from '../assets/Clases Funcionales-mobile.webp'
 import galeria3 from '../assets/Personal Trainner.webp'
@@ -36,12 +36,12 @@ export default function SobreNosotros() {
     return (
         <>
             <section className="relative h-[60vh] bg-cover bg-center overflow-hidden">
-                <img 
-                    src={bannerImg} 
-                    alt="Sobre nosotros" 
+                <img
+                    src={bannerImg}
+                    alt="Sobre nosotros"
                     fetchPriority="high"
                     loading="eager"
-                    className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none" 
+                    className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
                 />
                 <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/40 to-black" />
                 <div className="absolute inset-0 flex items-center justify-center -translate-y-6">

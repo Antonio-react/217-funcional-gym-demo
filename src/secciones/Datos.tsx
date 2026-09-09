@@ -2,7 +2,7 @@ import { MapPin } from 'lucide-react'
 import { motion } from 'framer-motion'
 import type { Variants } from 'framer-motion'
 
-import logoMarca from '../assets/Titanium Strength.png'
+import logoMarca from '../assets/Titanium Strength.webp'
 
 const itemVariants: Variants = {
     hidden: { opacity: 0, y: 40 },
