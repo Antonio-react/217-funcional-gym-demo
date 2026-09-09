@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import type { Variants } from 'framer-motion'
 
-import fitnessImg from '../assets/Sala musculacion.webp'
-import functionalImg from '../assets/Clases Funcionales.webp'
+import fitnessImg from '../assets/Sala musculacion-mobile.webp'
+import functionalImg from '../assets/Clases Funcionales-mobile.webp'
 import personalImg from '../assets/Personal Trainner.webp'
 
 const itemVariants: Variants = {
@@ -41,8 +41,8 @@ export default function ServiciosResumen() {
                             <img src={fitnessImg} 
                             alt="Sala de musculacion" 
                             loading="lazy"
-                            width="1200"
-                            height="1800"
+                            width="800"
+                            height="1200"
                             className="w-full h-64 object-cover transition-transform duration-300 hover:scale-110" />
                         </div>
                         <p className="text-center text-white text-lg font-semibold uppercase tracking-wide py-4">
@@ -57,8 +57,8 @@ export default function ServiciosResumen() {
                             <img src={functionalImg} 
                             alt="Functional Training" 
                             loading="lazy"
-                            width="1200"
-                            height="1800"
+                            width="800"
+                            height="1200"
                             className="w-full h-64 object-cover transition-transform duration-300 hover:scale-110" />
                         </div>
                         <p className="text-center text-white text-lg font-semibold uppercase tracking-wide py-4">
@@ -72,8 +72,8 @@ export default function ServiciosResumen() {
                         <div className="overflow-hidden rounded-2xl">
                             <img src={personalImg} 
                             loading="lazy"
-                            width="1200"
-                            height="1800"
+                            width="800"
+                            height="1200"
                             alt="Personal Trainer" 
                             className="w-full h-64 object-cover transition-transform duration-300   hover:scale-110" />
                         </div>
@@ -96,8 +96,8 @@ export default function ServiciosResumen() {
                     <div className="overflow-hidden rounded-xl">
                         <img src={fitnessImg} 
                         loading="lazy"
-                        width="1200"
-                        height="1800"
+                        width="800"
+                        height="1200"
                         alt="Sala de musculacion" className="w-full h-64 object-cover" />
                     </div>
                     <p className="text-center text-white text-lg font-semibold uppercase tracking-wide py-4">
@@ -109,8 +109,8 @@ export default function ServiciosResumen() {
                     <div className="overflow-hidden rounded-xl">
                         <img src={functionalImg} 
                         loading="lazy"
-                        width="1200"
-                        height="1800"
+                        width="800"
+                        height="1200"
                         alt="Functional Training" className="w-full h-64 object-cover" />
                     </div>
                     <p className="text-center text-white text-lg font-semibold uppercase tracking-wide py-4">
@@ -122,8 +122,8 @@ export default function ServiciosResumen() {
                     <div className="overflow-hidden rounded-xl">
                         <img src={personalImg} 
                         loading="lazy"
-                        width="1200"
-                        height="1800"
+                        width="800"
+                        height="1200"
                         alt="Personal Trainer" className="w-full h-64 object-cover" />
                     </div>
                     <p className="text-center text-white text-lg font-semibold uppercase tracking-wide py-4">

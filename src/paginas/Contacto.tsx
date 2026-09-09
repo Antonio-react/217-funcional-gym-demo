@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { datos } from '../config/datos'
 
-import bannerImg from '../assets/Clases Funcionales.webp'
+import bannerImg from '../assets/Clases Funcionales-desktop.webp'
 
 export default function Contacto() {
 

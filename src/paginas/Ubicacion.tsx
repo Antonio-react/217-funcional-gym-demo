@@ -2,8 +2,8 @@ import { useState } from 'react'
 import { MapPin, Car } from 'lucide-react'
 import { motion } from 'framer-motion'
 
-import bannerImg from '../assets/Horario.webp'
-import fotoGimnasio from '../assets/Gym Interior.webp'
+import bannerImg from '../assets/Horario-desktop.webp'
+import fotoGimnasio from '../assets/Gym Interior-mobile.webp'
 
 export default function Ubicacion() {
     const [mapaCargado, setMapaCargado] = useState(false)

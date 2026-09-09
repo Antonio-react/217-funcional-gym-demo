@@ -2,21 +2,16 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { datos } from '../config/datos'
 
-import heroImg from '../assets/Gym Interior.webp'
+import heroMobile from '../assets/Gym Interior-mobile.webp'
+import heroDesktop from '../assets/Gym Interior-desktop.webp'
 
 export default function Hero() {
     return (
         <section className="relative h-[85dvh] overflow-hidden">
 
-            {/* Imagen */}
-            <motion.img
-                src={heroImg}
-                alt="217 GYM"
-                fetchPriority="high"
-                loading="eager"
-                width="800" 
-                height="1200"
-                className="absolute inset-0 w-full h-full object-cover object-center sm:object-top brightness-[0.75]"
+            {/* Imagen Responsiva Animada */}
+            <motion.picture 
+                className="absolute inset-0 w-full h-full"
                 initial={{ scale: 1.1 }}
                 animate={{ scale: 1.15 }}
                 transition={{
@@ -25,7 +20,21 @@ export default function Hero() {
                     repeat: Infinity,
                     repeatType: "reverse"
                 }}
-            />
+            >
+                {/* Opción Desktop (≥ 768px) */}
+                <source media="(min-width: 768px)" srcSet={heroDesktop} />
+
+                {/* Opción Mobile (por defecto) */}
+                <img
+                    src={heroMobile}
+                    alt="217 GYM"
+                    fetchPriority="high"
+                    loading="eager"
+                    width="800" 
+                    height="1200"
+                    className="w-full h-full object-cover object-center sm:object-top brightness-[0.75]"
+                />
+            </motion.picture>
 
             {/* Gradient PRO */}
             <div className="absolute inset-0 bg-linear-to-r from-black/85 via-black/50 to-transparent" />
@@ -53,13 +62,11 @@ export default function Hero() {
                         </p>
 
                         <div className="flex gap-4">
-                            <Link to="/contacto" className="bg-yellow-500 hover:bg-yellow-400 active:scale-95 text-black font-semibold px-6 sm:px-8 py-3 rounded-lg text-base sm:text-lg transition shadow-lg shadow-yellow-500/20"
-                            >
+                            <Link to="/contacto" className="bg-yellow-500 hover:bg-yellow-400 active:scale-95 text-black font-semibold px-6 sm:px-8 py-3 rounded-lg text-base sm:text-lg transition shadow-lg shadow-yellow-500/20">
                                 Empieza hoy
                             </Link>
 
-                            <Link to="/horarios" className="border border-white/30 text-white bg-black/40 backdrop-blur-sm px-6 sm:px-8 py-3 rounded-lg text-base sm:text-lg hover:bg-white/10 active:scale-95 transition"
-                            >
+                            <Link to="/horarios" className="border border-white/30 text-white bg-black/40 backdrop-blur-sm px-6 sm:px-8 py-3 rounded-lg text-base sm:text-lg hover:bg-white/10 active:scale-95 transition">
                                 Ver horarios
                             </Link>
                         </div>

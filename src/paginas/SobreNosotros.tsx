@@ -3,14 +3,14 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import type { Variants } from 'framer-motion'
 
-import bannerImg from '../assets/Hero.webp'
+import bannerImg from '../assets/Barra-desktop.webp'
 import logoMarca from '../assets/Titanium Strength.png'
-import galeria1 from '../assets/Hero.webp'
-import galeria2 from '../assets/Clases Funcionales.webp'
+import galeria1 from '../assets/Barra-mobile.webp'
+import galeria2 from '../assets/Clases Funcionales-mobile.webp'
 import galeria3 from '../assets/Personal Trainner.webp'
-import galeria4 from '../assets/rueda.webp'
-import galeria5 from '../assets/Servicios.webp'
-import galeria6 from '../assets/Horario.webp'
+import galeria4 from '../assets/rueda-mobile.webp'
+import galeria5 from '../assets/Servicios-mobile.webp'
+import galeria6 from '../assets/Horario-mobile.webp'
 
 
 const itemVariants: Variants = {

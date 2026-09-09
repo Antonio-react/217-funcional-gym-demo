@@ -2,9 +2,9 @@ import { motion } from 'framer-motion'
 import type { Variants } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
-import bannerImg from '../assets/Servicios.webp'
-import fitnessImg from '../assets/Sala musculacion.webp'
-import functionalImg from '../assets/Clases Funcionales.webp'
+import bannerImg from '../assets/Servicios-desktop.webp'
+import fitnessImg from '../assets/Sala musculacion-mobile.webp'
+import functionalImg from '../assets/Clases Funcionales-mobile.webp'
 import personalImg from '../assets/Personal Trainner.webp'
 
 const tarjetaVariants: Variants = {
