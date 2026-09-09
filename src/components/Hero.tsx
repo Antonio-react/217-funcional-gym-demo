@@ -2,9 +2,6 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { datos } from '../config/datos'
 
-import heroMobile from '../assets/Gym Interior-mobile.webp'
-import heroDesktop from '../assets/Gym Interior-desktop.webp'
-
 export default function Hero() {
     return (
         <section className="relative h-[85dvh] overflow-hidden">
@@ -22,15 +19,15 @@ export default function Hero() {
                 }}
             >
                 {/* Opción Desktop (≥ 768px) */}
-                <source media="(min-width: 768px)" srcSet={heroDesktop} />
+                <source media="(min-width: 768px)" srcSet="/Gym Interior-desktop.webp" />
 
                 {/* Opción Mobile (por defecto) */}
                 <img
-                    src={heroMobile}
+                    src="/Gym Interior-mobile.webp"
                     alt="217 GYM"
                     fetchPriority="high"
                     loading="eager"
-                    width="800" 
+                    width="800"
                     height="1200"
                     className="w-full h-full object-cover object-center sm:object-top brightness-[0.75]"
                 />
