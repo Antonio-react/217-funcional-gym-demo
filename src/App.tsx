@@ -1,15 +1,17 @@
+import { Suspense, lazy } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Navbar from './components/Navbar'
-import Inicio from './paginas/Inicio'
-import Horario from './paginas/Horario'
-import Servicios from './paginas/Servicios'
-import Tarifas from './paginas/Tarifas'
-import SobreNosotros from './paginas/SobreNosotros'
-import Ubicacion from './paginas/Ubicacion'
-import Contacto from './paginas/Contacto'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
+
+const Inicio = lazy(() => import('./paginas/Inicio'))
+const Horario = lazy(() => import('./paginas/Horario'))
+const Servicios = lazy(() => import('./paginas/Servicios'))
+const Tarifas = lazy(() => import('./paginas/Tarifas'))
+const SobreNosotros = lazy(() => import('./paginas/SobreNosotros'))
+const Ubicacion = lazy(() => import('./paginas/Ubicacion'))
+const Contacto = lazy(() => import('./paginas/Contacto'))
 
 export default function App() {
   return (
@@ -17,15 +19,17 @@ export default function App() {
       <ScrollToTop />
       <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Inicio />} />
-        <Route path="/horarios" element={<Horario />} />
-        <Route path="/servicios" element={<Servicios />} />
-        <Route path="/tarifas" element={<Tarifas />} />
-        <Route path="/sobre-nosotros" element={<SobreNosotros />} />
-        <Route path="/ubicacion" element={<Ubicacion />} />
-        <Route path="/contacto" element={<Contacto />} />
-      </Routes>
+      <Suspense fallback={<div className="min-h-screen bg-black" />}>
+        <Routes>
+          <Route path="/" element={<Inicio />} />
+          <Route path="/horarios" element={<Horario />} />
+          <Route path="/servicios" element={<Servicios />} />
+          <Route path="/tarifas" element={<Tarifas />} />
+          <Route path="/sobre-nosotros" element={<SobreNosotros />} />
+          <Route path="/ubicacion" element={<Ubicacion />} />
+          <Route path="/contacto" element={<Contacto />} />
+        </Routes>
+      </Suspense>
 
       <Footer />
     </>

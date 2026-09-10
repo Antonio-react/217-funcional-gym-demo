@@ -5,14 +5,14 @@ import { motion } from 'framer-motion'
 import bannerDesktop from '../assets/Horario-desktop.webp'
 import bannerMobile from '../assets/Horario-mobile.webp'
 
-import fotoGimnasio from '../assets/Gym Interior-mobile.webp'
+import fotoGimnasio from '../assets/Gym-Interior-mobile.webp'
 
 export default function Ubicacion() {
     const [mapaCargado, setMapaCargado] = useState(false)
 
     return (
         <>
-            <section className="relative h-[60vh] bg-cover bg-center overflow-hidden">
+            <section className="relative h-[60svh] bg-cover bg-center overflow-hidden">
                 <picture className="absolute inset-0 w-full h-full pointer-events-none">
                     <source media="(min-width: 768px)" srcSet={bannerDesktop} width="1920" height="1080" />
                     <img 

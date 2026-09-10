@@ -1,14 +1,15 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { datos } from '../config/datos'
+import heroDesktop from '../assets/Gym-Interior-desktop.webp';
+import heroMobile from '../assets/Gym-Interior-mobile.webp';
 
 export default function Hero() {
     return (
-        <section className="relative h-[85dvh] overflow-hidden">
+        <section className="relative h-[85svh] overflow-hidden">
 
-            {/* Imagen Responsiva Animada */}
-            <motion.picture 
-                className="absolute inset-0 w-full h-full"
+            <motion.div 
+                className="absolute inset-0 w-full h-full -z-10"
                 initial={{ scale: 1.1 }}
                 animate={{ scale: 1.15 }}
                 transition={{
@@ -18,20 +19,19 @@ export default function Hero() {
                     repeatType: "reverse"
                 }}
             >
-                {/* Opción Desktop (≥ 768px) */}
-                <source media="(min-width: 768px)" srcSet="/Gym Interior-desktop.webp" />
-
-                {/* Opción Mobile (por defecto) */}
-                <img
-                    src="/Gym Interior-mobile.webp"
-                    alt="217 GYM"
-                    fetchPriority="high"
-                    loading="eager"
-                    width="800"
-                    height="1200"
-                    className="w-full h-full object-cover object-center sm:object-top brightness-[0.75]"
-                />
-            </motion.picture>
+                <picture className="w-full h-full block">
+                    <source media="(min-width: 768px)" srcSet={heroDesktop} />
+                    <img
+                        src={heroMobile}
+                        alt="217 GYM"
+                        fetchPriority="high"
+                        loading="eager"
+                        width="800"
+                        height="1200"
+                        className="w-full h-full object-cover object-center sm:object-top brightness-[0.75]"
+                    />
+                </picture>
+            </motion.div>
 
             {/* Gradient PRO */}
             <div className="absolute inset-0 bg-linear-to-r from-black/85 via-black/50 to-transparent" />

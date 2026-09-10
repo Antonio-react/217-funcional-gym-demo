@@ -7,7 +7,7 @@ import bannerDesktop from '../assets/Barra-desktop.webp'
 import bannerMobile from '../assets/Barra-mobile.webp'
 import logoMarca from '../assets/Titanium Strength.webp'
 import galeria1 from '../assets/Barra-mobile.webp'
-import galeria2 from '../assets/Clases Funcionales-mobile.webp'
+import galeria2 from '../assets/Clases-Funcionales-mobile.webp'
 import galeria3 from '../assets/Personal Trainner.webp'
 import galeria4 from '../assets/rueda-mobile.webp'
 import galeria5 from '../assets/Servicios-mobile.webp'
@@ -36,7 +36,7 @@ export default function SobreNosotros() {
 
     return (
         <>
-            <section className="relative h-[60vh] bg-cover bg-center overflow-hidden">
+            <section className="relative h-[60svh] bg-cover bg-center overflow-hidden">
                 <picture className="absolute inset-0 w-full h-full pointer-events-none">
                     <source media="(min-width: 768px)" srcSet={bannerDesktop} width="1920" height="1080" />
                     <img 

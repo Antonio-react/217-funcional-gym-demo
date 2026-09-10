@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 import bannerDesktop from '../assets/Servicios-desktop.webp'
 import bannerMobile from '../assets/Servicios-mobile.webp'
 
-import fitnessImg from '../assets/Sala musculacion-mobile.webp'
-import functionalImg from '../assets/Clases Funcionales-mobile.webp'
+import fitnessImg from '../assets/Sala-musculacion-mobile.webp'
+import functionalImg from '../assets/Clases-Funcionales-mobile.webp'
 import personalImg from '../assets/Personal Trainner.webp'
 
 const tarjetaVariants: Variants = {
@@ -17,7 +17,7 @@ const tarjetaVariants: Variants = {
 export default function Servicios() {
     return (
         <>
-            <section className="relative h-[60vh] bg-cover bg-center overflow-hidden">
+            <section className="relative h-[60svh] bg-cover bg-center overflow-hidden">
                 <picture className="absolute inset-0 w-full h-full pointer-events-none">
                     <source media="(min-width: 768px)" srcSet={bannerDesktop} width="1920" height="1080" />
                     <img 

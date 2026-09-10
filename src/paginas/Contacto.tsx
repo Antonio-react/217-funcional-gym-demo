@@ -3,8 +3,8 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { datos } from '../config/datos'
 
-import bannerDesktop from '../assets/Clases Funcionales-desktop.webp'
-import bannerMobile from '../assets/Clases Funcionales-mobile.webp'
+import bannerDesktop from '../assets/Clases-Funcionales-desktop.webp'
+import bannerMobile from '../assets/Clases-Funcionales-mobile.webp'
 
 
 export default function Contacto() {
@@ -21,7 +21,7 @@ export default function Contacto() {
 
     return (
         <>
-            <section className="relative h-[60vh] bg-cover overflow-hidden">
+            <section className="relative h-[60svh] bg-cover overflow-hidden">
                 <picture className="absolute inset-0 w-full h-full pointer-events-none">
                     <source media="(min-width: 768px)" srcSet={bannerDesktop} width="1920" height="1080" />
                     <img 
