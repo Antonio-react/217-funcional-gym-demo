@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { datos } from '../config/datos'
+
 import heroDesktop from '../assets/Gym-Interior-desktop.webp';
-import heroMobile from '../assets/Gym-Interior-mobile.webp';
 
 export default function Hero() {
     return (
@@ -22,7 +22,7 @@ export default function Hero() {
                 <picture className="w-full h-full block">
                     <source media="(min-width: 768px)" srcSet={heroDesktop} />
                     <img
-                        src={heroMobile}
+                        src="/Gym-Interior-mobile.webp"
                         alt="217 GYM"
                         fetchPriority="high"
                         loading="eager"

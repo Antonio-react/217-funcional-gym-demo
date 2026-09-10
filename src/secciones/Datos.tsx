@@ -2,7 +2,7 @@ import { MapPin } from 'lucide-react'
 import { motion } from 'framer-motion'
 import type { Variants } from 'framer-motion'
 
-import logoMarca from '../assets/Titanium Strength.webp'
+import logoMarca from '../assets/Titanium-strength.webp'
 
 const itemVariants: Variants = {
     hidden: { opacity: 0, y: 40 },
@@ -54,7 +54,7 @@ export default function Datos() {
 
                 <motion.div variants={itemVariants} className="flex flex-col items-center flex-1 justify-start min-[600px]:px-1 md:px-4 lg:px-8 xl:px-14">
                     <div className="h-16 flex items-center justify-center">
-                        <MapPin size={36} className="text-gray-400" />
+                        <MapPin size={42} className="text-gray-400" />
                     </div>
                     <div className="h-8 flex items-center justify-center">
                         <p className="text-2xl font-bold text-white">Ugena</p>
@@ -88,7 +88,7 @@ export default function Datos() {
 
                 <div className="flex flex-col items-center justify-between py-5 h-36 mt-3">
                     <div className="h-16 flex items-end justify-between">
-                        <MapPin size={28} className="text-gray-400" />
+                        <MapPin size={32} className="text-gray-400" />
                     </div>
                     <p className="text-2xl font-bold text-white">Ugena</p>
                 </div>

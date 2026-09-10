@@ -7,7 +7,7 @@ import bannerMobile from '../assets/Servicios-mobile.webp'
 
 import fitnessImg from '../assets/Sala-musculacion-mobile.webp'
 import functionalImg from '../assets/Clases-Funcionales-mobile.webp'
-import personalImg from '../assets/Personal Trainner.webp'
+import personalImg from '../assets/Personal-trainner.webp'
 
 const tarjetaVariants: Variants = {
     hidden: { opacity: 0, y: 40 },
