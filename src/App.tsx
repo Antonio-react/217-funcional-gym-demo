@@ -1,4 +1,4 @@
-import { Suspense, lazy } from 'react'
+import { Suspense, lazy, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Navbar from './components/Navbar'
@@ -14,12 +14,29 @@ const Ubicacion = lazy(() => import('./paginas/Ubicacion'))
 const Contacto = lazy(() => import('./paginas/Contacto'))
 
 export default function App() {
+  useEffect(() => {
+    const precargarPaginas = () => {
+      import('./paginas/Horario')
+      import('./paginas/Servicios')
+      import('./paginas/Tarifas')
+      import('./paginas/SobreNosotros')
+      import('./paginas/Ubicacion')
+      import('./paginas/Contacto')
+    }
+
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(precargarPaginas)
+    } else {
+      setTimeout(precargarPaginas, 1000)
+    }
+  }, [])
+
   return (
     <>
       <ScrollToTop />
       <Navbar />
 
-      <Suspense fallback={<div className="min-h-screen bg-black" />}>
+      <Suspense fallback={<div className="min-h-screen bg-black/50 animate-pulse" />}>
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/horarios" element={<Horario />} />
