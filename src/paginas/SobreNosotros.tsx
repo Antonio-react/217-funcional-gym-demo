@@ -39,8 +39,8 @@ export default function SobreNosotros() {
             <section className="relative h-[60svh] bg-cover bg-center overflow-hidden">
                 <picture className="absolute inset-0 w-full h-full pointer-events-none">
                     <source media="(min-width: 768px)" srcSet={bannerDesktop} width="1920" height="1080" />
-                    <img 
-                        src={bannerMobile} 
+                    <img
+                        src={bannerMobile}
                         alt="Servicios y instalaciones de 217 GYM"
                         fetchPriority="high"
                         loading="eager"
@@ -99,10 +99,10 @@ export default function SobreNosotros() {
                         <p className="text-xs text-gray-400 text-center uppercase tracking-wide mt-1">Equipamiento Profesional</p>
                     </div>
                     <div className="flex flex-col items-center justify-center gap-1">
-                        <img src={logoMarca} 
-                            alt="Titanium Strength" width="250"                             
-                            height="250" 
-                            loading="lazy" 
+                        <img src={logoMarca}
+                            alt="Titanium Strength" width="250"
+                            height="250"
+                            loading="lazy"
                             className="h-28 w-auto" />
                         <p className="text-xs text-gray-400 text-center uppercase tracking-wide -mt-3 -py-2">Equipamiento</p>
                     </div>
@@ -139,12 +139,12 @@ export default function SobreNosotros() {
                     </motion.div>
                     <motion.div variants={itemVariants} className="flex-1 flex flex-col items-center justify-center min-[600px]:px-2 md:px-6 lg:px-12">
                         <div className="h-16 flex items-center">
-                            <img src={logoMarca} 
-                            alt="Titanium Strength" 
-                            width="250" 
-                            height="250"
-                            loading="lazy" 
-                            className="h-28 w-auto" />
+                            <img src={logoMarca}
+                                alt="Titanium Strength"
+                                width="250"
+                                height="250"
+                                loading="lazy"
+                                className="h-28 w-auto" />
                         </div>
                         <p className="text-sm text-gray-400 uppercase tracking-wide mt-2">Equipamiento</p>
                     </motion.div>
@@ -191,7 +191,7 @@ export default function SobreNosotros() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, ease: "easeOut" }}
                     viewport={{ once: true }}
-                    className="flex md:hidden overflow-x-auto snap-x snap-mandatory gap-4 px-4 no-scrollbar"
+                    className="flex md:hidden overflow-x-auto snap-x snap-mandatory gap-6 px-4 no-scrollbar"
                 >
                     {[galeria1, galeria2, galeria3, galeria4, galeria5, galeria6].map((foto, i) => (
                         <div key={i} className="snap-center shrink-0 w-[85%] overflow-hidden rounded-xl ">

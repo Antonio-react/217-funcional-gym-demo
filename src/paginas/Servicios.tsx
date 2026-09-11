@@ -20,8 +20,8 @@ export default function Servicios() {
             <section className="relative h-[60svh] bg-cover bg-center overflow-hidden">
                 <picture className="absolute inset-0 w-full h-full pointer-events-none">
                     <source media="(min-width: 768px)" srcSet={bannerDesktop} width="1920" height="1080" />
-                    <img 
-                        src={bannerMobile} 
+                    <img
+                        src={bannerMobile}
                         alt="Zonas de entrenamiento y máquinas de fuerza en 217 GYM"
                         fetchPriority="high"
                         loading="eager"
@@ -98,7 +98,7 @@ export default function Servicios() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, ease: "easeOut" }}
                         viewport={{ once: true }}
-                        className="flex md:hidden overflow-x-auto snap-x snap-mandatory gap-4 px-4 pb-2 no-scrollbar"
+                        className="flex md:hidden overflow-x-auto snap-x snap-mandatory gap-6 px-4 pb-2 no-scrollbar"
                     >
                         <Link to="/sobre-nosotros" className="snap-center shrink-0 w-[85%] bg-zinc-900/80 backdrop-blur-md rounded-2xl border border-zinc-800 shadow-xl overflow-hidden">
                             <img src={fitnessImg} alt="Sala de musculacion" loading="lazy" className="w-full h-48 object-cover object-top" />
