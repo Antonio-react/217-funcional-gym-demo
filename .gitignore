@@ -24,3 +24,9 @@ stats.html
 *.njsproj
 *.sln
 *.sw?
+
+# Windows
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
