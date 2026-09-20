@@ -43,6 +43,12 @@ export default function SobreNosotros() {
 
   return (
     <>
+      <title>Sobre nosotros | 217 Funcional GYM</title>
+      <meta
+        name="description"
+        content="Conoce 217 Funcional GYM: nuestro espacio y nuestra forma de entrenar en Ugena (Toledo)."
+      />
+
       <section className="relative h-[60svh] bg-cover bg-center overflow-hidden">
         <picture className="absolute inset-0 w-full h-full pointer-events-none">
           <source
@@ -126,7 +132,7 @@ export default function SobreNosotros() {
               loading="lazy"
               className="h-28 w-auto"
             />
-            <p className="text-xs text-gray-400 text-center uppercase tracking-wide -mt-3 -py-2">
+            <p className="text-xs text-gray-400 text-center uppercase tracking-wide -mt-3">
               Equipamiento
             </p>
           </div>
@@ -209,7 +215,7 @@ export default function SobreNosotros() {
         </m.h2>
 
         {/* Version escritorio: grid + clic para ampliar */}
-        <div className="hidden md:grid grid-cols-3 gap-4 max-w-5xl mx-auto object-cover object-center">
+        <div className="hidden md:grid grid-cols-3 gap-4 max-w-5xl mx-auto">
           {[galeria1, galeria2, galeria3, galeria4, galeria5, galeria6].map(
             (foto, i) => (
               <m.div

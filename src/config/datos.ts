@@ -17,8 +17,20 @@ export const datos = {
     country: "ES",
   },
   horario: {
-    semana: { dias: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], abre: "08:00", cierra: "23:00" },
+    semana: {
+      dias: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      abre: "08:00",
+      cierra: "23:00",
+    },
     finde: { dias: ["Saturday", "Sunday"], abre: "09:00", cierra: "14:00" },
+  },
+  legal: {
+    titular: "[PENDIENTE: nombre y apellidos o razón social]",
+    nif: "[PENDIENTE: NIF o CIF]",
+    domicilio: "[PENDIENTE: domicilio fiscal completo]",
+    registroMercantil:
+      "[PENDIENTE: datos del Registro Mercantil, solo si es sociedad]",
+    ultimaActualizacion: "[PENDIENTE: fecha de publicación]",
   },
   siteUrl: "https://217-gym.netlify.app",
   email: "217funcionalgym@gmail.com",

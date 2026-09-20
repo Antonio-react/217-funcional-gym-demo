@@ -17,6 +17,12 @@ const tarjetaVariants: Variants = {
 export default function Servicios() {
   return (
     <>
+      <title>Servicios | 217 Funcional GYM</title>
+      <meta
+        name="description"
+        content="Descubre los servicios de 217 Funcional GYM, tu gimnasio de entrenamiento funcional en Ugena (Toledo)."
+      />
+
       <section className="relative h-[60svh] bg-cover bg-center overflow-hidden">
         <picture className="absolute inset-0 w-full h-full pointer-events-none">
           <source
@@ -60,7 +66,11 @@ export default function Servicios() {
               variants={tarjetaVariants}
               className="group bg-zinc-900/80 backdrop-blur-md rounded-2xl border border-zinc-800 shadow-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:border-white/20"
             >
-              <Link to="/sobre-nosotros" className="overflow-hidden">
+              <Link
+                to="/sobre-nosotros"
+                className="overflow-hidden"
+                aria-label="Ver las instalaciones"
+              >
                 <img
                   src={fitnessImg}
                   alt=""

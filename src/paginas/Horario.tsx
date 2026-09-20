@@ -13,6 +13,12 @@ const tarjetaVariants: Variants = {
 export default function Horario() {
   return (
     <>
+      <title>Horario | 217 Funcional GYM</title>
+      <meta
+        name="description"
+        content="Consulta el horario de 217 Funcional GYM en Ugena (Toledo) y planifica tus entrenamientos."
+      />
+
       <section className="relative h-[60svh] bg-cover bg-center overflow-hidden">
         <picture className="absolute inset-0 w-full h-full pointer-events-none">
           <source

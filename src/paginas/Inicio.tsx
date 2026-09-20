@@ -7,6 +7,12 @@ import ServiciosResumen from "../secciones/ServiciosResumen";
 export default function Inicio() {
   return (
     <>
+      <title>217 Funcional GYM</title>
+      <meta
+        name="description"
+        content="217 Funcional GYM: gimnasio de entrenamiento funcional en Ugena (Toledo). Conoce nuestros servicios, tarifas y horarios."
+      />
+
       <Hero />
       <Datos />
       <Separador />

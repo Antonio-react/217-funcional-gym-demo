@@ -13,6 +13,12 @@ const tarjetaVariants: Variants = {
 export default function Tarifas() {
   return (
     <>
+      <title>Tarifas | 217 Funcional GYM</title>
+      <meta
+        name="description"
+        content="Consulta las tarifas de 217 Funcional GYM en Ugena (Toledo): sin matrícula y sin permanencia."
+      />
+
       <section className="relative h-[60svh] bg-cover bg-center overflow-hidden">
         <picture className="absolute inset-0 w-full h-full pointer-events-none">
           <source

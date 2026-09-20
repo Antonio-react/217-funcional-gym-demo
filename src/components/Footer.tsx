@@ -85,6 +85,7 @@ export default function Footer() {
               className="flex items-center gap-2 text-sm no-underline text-gray-400 hover:text-brand-gold transition-colors py-1"
             >
               <svg
+                aria-hidden="true"
                 className="text-brand-gold"
                 width="16"
                 height="16"
@@ -103,6 +104,7 @@ export default function Footer() {
               className="flex items-center gap-2 text-sm no-underline text-gray-400 hover:text-brand-gold transition-colors py-1"
             >
               <svg
+                aria-hidden="true"
                 width="16"
                 height="16"
                 viewBox="0 0 24 24"
@@ -138,6 +140,29 @@ export default function Footer() {
       </div>
 
       <div className="max-w-5xl mx-auto border-t border-gray-800 mt-10 pt-4 text-center">
+        <nav
+          aria-label="Información legal"
+          className="flex flex-wrap justify-center gap-x-6 mb-2"
+        >
+          <Link
+            to="/aviso-legal"
+            className="text-xs no-underline text-gray-400 hover:text-brand-gold transition-colors py-2"
+          >
+            Aviso legal
+          </Link>
+          <Link
+            to="/privacidad"
+            className="text-xs no-underline text-gray-400 hover:text-brand-gold transition-colors py-2"
+          >
+            Privacidad
+          </Link>
+          <Link
+            to="/cookies"
+            className="text-xs no-underline text-gray-400 hover:text-brand-gold transition-colors py-2"
+          >
+            Cookies
+          </Link>
+        </nav>
         <p className="text-xs -mb-2 text-gray-300">
           © {new Date().getFullYear()} | 217 FUNCIONAL GYM. Todos los derechos
           reservados.

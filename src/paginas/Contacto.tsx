@@ -14,11 +14,17 @@ export default function Contacto() {
     e.preventDefault();
     const texto = `Hola, soy ${nombre}. ${mensaje}`;
     const url = `https://wa.me/${datos.phone.whatsapp}?text=${encodeURIComponent(texto)}`;
-    window.open(url, "_blank");
+    window.open(url, "_blank", "noopener,noreferrer");
   }
 
   return (
     <>
+      <title>Contacto | 217 Funcional GYM</title>
+      <meta
+        name="description"
+        content="Contacta con 217 Funcional GYM por teléfono, WhatsApp, Instagram o email. Estamos en Ugena (Toledo)."
+      />
+
       <section className="relative h-[60svh] bg-cover overflow-hidden">
         <picture className="absolute inset-0 w-full h-full pointer-events-none">
           <source
@@ -76,6 +82,7 @@ export default function Contacto() {
               className="flex items-center gap-3 text-gray-300 no-underline hover:text-brand-gold active:text-brand-gold transition-colors"
             >
               <svg
+                aria-hidden="true"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -95,6 +102,7 @@ export default function Contacto() {
               className="flex items-center gap-3 text-gray-300 no-underline hover:text-brand-gold active:text-brand-gold transition-colors"
             >
               <svg
+                aria-hidden="true"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { MapPin, Car } from "lucide-react";
 import { m } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import bannerDesktop from "../assets/Horario-desktop.webp";
 import bannerMobile from "../assets/Horario-mobile.webp";
@@ -9,9 +10,16 @@ import fotoGimnasio from "../assets/Gym-Interior-mobile.webp";
 
 export default function Ubicacion() {
   const [mapaCargado, setMapaCargado] = useState(false);
+  const [mostrarMapa, setMostrarMapa] = useState(false); // NUEVO
 
   return (
     <>
+      <title>Ubicación | 217 Funcional GYM</title>
+      <meta
+        name="description"
+        content="Cómo llegar a 217 Funcional GYM: Polígono Industrial La Frontera, Ugena (Toledo)."
+      />
+
       <section className="relative h-[60svh] bg-cover bg-center overflow-hidden">
         <picture className="absolute inset-0 w-full h-full pointer-events-none">
           <source
@@ -60,13 +68,40 @@ export default function Ubicacion() {
               alt="Instalaciones 217 GYM"
               className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-100 ${mapaCargado ? "opacity-0" : "opacity-100"}`}
             />
-            <iframe
-              src="https://maps.google.com/maps?q=Calle+Proyecto+5,+69,+Poligono+Industrial+La+Frontera,+Ugena,+Toledo&output=embed"
-              onLoad={() => setTimeout(() => setMapaCargado(true), 900)}
-              className={`absolute inset-0 w-full h-full border-0 transition-opacity duration-300 ${mapaCargado ? "opacity-100" : "opacity-0"}`}
-              allowFullScreen
-              referrerPolicy="strict-origin-when-cross-origin"
-            ></iframe>
+
+            {/* CAMBIO: el iframe solo existe si el usuario ha pulsado "Ver mapa" */}
+            {mostrarMapa && (
+              <iframe
+                src="https://maps.google.com/maps?q=Calle+Proyecto+5,+69,+Poligono+Industrial+La+Frontera,+Ugena,+Toledo&output=embed"
+                title="Mapa con la ubicación de 217 Funcional GYM"
+                onLoad={() => setTimeout(() => setMapaCargado(true), 900)}
+                className={`absolute inset-0 w-full h-full border-0 transition-opacity duration-300 ${mapaCargado ? "opacity-100" : "opacity-0"}`}
+                allowFullScreen
+                referrerPolicy="strict-origin-when-cross-origin"
+              ></iframe>
+            )}
+
+            {/* NUEVO: aviso y botón, visibles solo mientras el mapa no se ha pedido */}
+            {!mostrarMapa && (
+              <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/60 px-6">
+                <button
+                  type="button"
+                  onClick={() => setMostrarMapa(true)}
+                  className="cursor-pointer border border-white/40 text-white bg-black/30 px-6 py-2.5 text-sm font-semibold uppercase tracking-widest hover:border-brand-gold hover:text-brand-gold active:border-brand-gold active:text-brand-gold transition-colors duration-200"
+                >
+                  Cargar mapa
+                </button>
+                <p className="text-xs md:text-sm text-gray-300 max-w-xs">
+                  Google puede instalar cookies al cargar el mapa.{" "}
+                  <Link
+                    to="/cookies"
+                    className="underline hover:text-brand-gold transition-colors"
+                  >
+                    Más información
+                  </Link>
+                </p>
+              </div>
+            )}
           </div>
 
           <div className="flex flex-col items-center gap-2 text-gray-300 mb-8">
