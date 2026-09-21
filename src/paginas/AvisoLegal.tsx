@@ -74,9 +74,7 @@ export default function AvisoLegal() {
 
       <h2>6. Enlaces a terceros</h2>
       <p>
-        Este sitio contiene enlaces a servicios externos (WhatsApp, Instagram y
-        Google Maps). Al utilizarlos abandonas esta web y pasas a regirte por
-        las condiciones y políticas de privacidad de cada servicio.
+        Este sitio contiene enlaces a servicios externos (WhatsApp, Instagram y Google Maps) e incorpora, solo si lo solicitas con el botón «Cargar mapa», un mapa de Google Maps. Al utilizar estos servicios te rigen sus propias condiciones y políticas de privacidad; en el caso del mapa, consulta nuestra Política de cookies.
       </p>
 
       <h2>7. Legislación aplicable</h2>

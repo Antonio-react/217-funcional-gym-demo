@@ -25,11 +25,12 @@ export const datos = {
     finde: { dias: ["Saturday", "Sunday"], abre: "09:00", cierra: "14:00" },
   },
   legal: {
-    titular: "[PENDIENTE: nombre y apellidos o razón social]",
-    nif: "[PENDIENTE: NIF o CIF]",
-    domicilio: "[PENDIENTE: domicilio fiscal completo]",
+    titular: "FUNCIONAL TRAINING CLUB 217 SL",
+    nif: "B93755676",
+    domicilio:
+      "Calle Proyecto 5, Nave 69, Polígono Industrial La Frontera, 45217 Ugena (Toledo)",
     registroMercantil:
-      "[PENDIENTE: datos del Registro Mercantil, solo si es sociedad]",
+      "Inscrita en el Registro Mercantil de Toledo, hoja TO-50789, inscripción 1.ª",
     ultimaActualizacion: "[PENDIENTE: fecha de publicación]",
   },
   siteUrl: "https://217-gym.netlify.app",

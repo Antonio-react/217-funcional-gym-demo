@@ -37,6 +37,8 @@ export default function Privacidad() {
         Tratamos datos personales cuando nos escribes o nos llamas por teléfono,
         WhatsApp, correo electrónico o Instagram: normalmente tu nombre, tu
         número de teléfono o cuenta y el contenido de tu mensaje.
+
+        Al visitar la web, el proveedor de alojamiento (Netlify) recibe datos técnicos, como tu dirección IP, para poder mostrarte las páginas; no los utilizamos para ninguna otra finalidad. Si pulsas «Cargar mapa» en la página de Ubicación, tu navegador se conecta con Google, que puede tratar tu dirección IP y utilizar cookies; consulta nuestra Política de cookies.
       </p>
 
       <h2>3. Finalidad</h2>
@@ -63,11 +65,10 @@ export default function Privacidad() {
       <p>
         No cedemos tus datos a terceros, salvo obligación legal. Para
         comunicarnos contigo usamos servicios de mensajería y correo de terceros
-        (como WhatsApp, Instagram y el proveedor de correo del gimnasio), y esta
-        web está alojada en Netlify, que puede tratar datos técnicos de
-        conexión, como la dirección IP. Alguno de estos proveedores puede estar
-        ubicado fuera del Espacio Económico Europeo; en ese caso, las
-        transferencias se rigen por las garantías que establece la normativa.
+        (como WhatsApp, Instagram y el proveedor de correo del gimnasio). Alguno
+        de estos proveedores puede estar ubicado fuera del Espacio Económico
+        Europeo; en ese caso, las transferencias se rigen por las garantías que
+        establece la normativa.
       </p>
 
       <h2>7. Tus derechos</h2>

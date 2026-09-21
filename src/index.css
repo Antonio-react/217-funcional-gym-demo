@@ -32,6 +32,12 @@
   }
 }
 
+@custom-variant laptop {
+  @media (min-width: 1024px) and (max-height: 850px) {
+    @slot;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #9ca3af;

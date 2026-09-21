@@ -40,9 +40,9 @@ export default function Ubicacion() {
         </picture>
         <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/40 to-black" />
         <div className="absolute inset-0 flex items-center justify-center -translate-y-6">
-          <p className="text-white font-marker text-6xl sm:text-7xl md:text-8xl lg:text-9xl tracking-wider uppercase text-center">
+          <h1 className="text-white font-marker text-6xl sm:text-7xl md:text-8xl lg:text-9xl tracking-wider uppercase text-center">
             Ubicación
-          </p>
+          </h1>
         </div>
       </section>
 
@@ -66,7 +66,7 @@ export default function Ubicacion() {
             <img
               src={fotoGimnasio}
               alt="Instalaciones 217 GYM"
-              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-100 ${mapaCargado ? "opacity-0" : "opacity-100"}`}
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity motion-reduce:transition-none duration-100 ${mapaCargado ? "opacity-0" : "opacity-100"}`}
             />
 
             {/* CAMBIO: el iframe solo existe si el usuario ha pulsado "Ver mapa" */}
@@ -75,7 +75,7 @@ export default function Ubicacion() {
                 src="https://maps.google.com/maps?q=Calle+Proyecto+5,+69,+Poligono+Industrial+La+Frontera,+Ugena,+Toledo&output=embed"
                 title="Mapa con la ubicación de 217 Funcional GYM"
                 onLoad={() => setTimeout(() => setMapaCargado(true), 900)}
-                className={`absolute inset-0 w-full h-full border-0 transition-opacity duration-300 ${mapaCargado ? "opacity-100" : "opacity-0"}`}
+                className={`absolute inset-0 w-full h-full border-0 transition-opacity motion-reduce:transition-none duration-300 ${mapaCargado ? "opacity-100" : "opacity-0"}`}
                 allowFullScreen
                 referrerPolicy="strict-origin-when-cross-origin"
               ></iframe>
@@ -107,7 +107,7 @@ export default function Ubicacion() {
           <div className="flex flex-col items-center gap-2 text-gray-300 mb-8">
             <p className="flex items-center gap-2">
               <MapPin size={18} className="text-brand-gold" />
-              Pol. Ind. la Frontera. Ugena (Toledo)
+              Pol. Ind. la Frontera, Ugena (Toledo)
             </p>
             <p className="flex items-center gap-2">
               <MapPin size={18} className="text-brand-gold" />
