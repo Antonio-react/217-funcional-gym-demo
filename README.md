@@ -4,7 +4,7 @@ Página web informativa para **217 Funcional GYM**, un gimnasio funcional real e
 
 🔗 **Demo en vivo:** [217funcionalgymdemo.netlify.app](https://217funcionalgymdemo.netlify.app)
 
-![Captura del Hero de 217 Funcional GYM](public/screenshot-hero.png)
+![Captura del Hero de 217 Funcional GYM](docs/screenshot-hero.png)
 
 ## Sobre el proyecto
 
