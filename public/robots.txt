@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://217-gym.netlify.app/sitemap.xml
+Sitemap: https://217funcionalgymdemo.netlify.app/sitemap.xml

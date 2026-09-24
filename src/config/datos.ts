@@ -33,7 +33,7 @@ export const datos = {
       "Inscrita en el Registro Mercantil de Toledo, hoja TO-50789, inscripción 1.ª",
     ultimaActualizacion: "[PENDIENTE: fecha de publicación]",
   },
-  siteUrl: "https://217-gym.netlify.app",
+  siteUrl: "https://217funcionalgymdemo.netlify.app",
   email: "217funcionalgym@gmail.com",
   instagram: "217funcionalgym",
 } as const;

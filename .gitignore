@@ -27,6 +27,8 @@ stats.html
 
 # Windows
 Thumbs.db
+desktop.ini
+
 
 # TypeScript
 *.tsbuildinfo
