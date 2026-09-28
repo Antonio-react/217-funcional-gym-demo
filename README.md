@@ -1,6 +1,6 @@
 # 217 FUNCIONAL GYM 🏋️
 
-Página web informativa para **217 Funcional GYM**, un gimnasio funcional real en Ugena (Toledo). Proyecto desarrollado como freelance para clientes reales.
+Página web informativa para **217 Funcional GYM**, un gimnasio funcional real en Ugena (Toledo). Proyecto real desarrollado de principio a fin para los dueños del gimnasio.
 
 🔗 **Demo en vivo:** [217funcionalgymdemo.netlify.app](https://217funcionalgymdemo.netlify.app)
 
