@@ -1,4 +1,4 @@
-import { MapPin } from "lucide-react";
+import { MapPin, Dumbbell } from "lucide-react";
 import { m } from "framer-motion";
 import type { Variants } from "framer-motion";
 
@@ -28,11 +28,11 @@ export default function Datos() {
           className="flex flex-col flex-1 items-center justify-start min-[600px]:px-1 md:px-4 lg:px-8 xl:px-14"
         >
           <div className="h-16 flex items-center justify-center">
-            <p className="text-3xl font-bold text-white">300 m²</p>
+            <p className="text-3xl font-bold text-white">400 m²</p>
           </div>
           <div className="h-8 flex items-center justify-center">
-            <p className="text-sm text-gray-400 uppercase tracking-wide">
-              Interior
+            <p className="text-base text-gray-400 uppercase tracking-wide">
+              Instalaciones
             </p>
           </div>
         </m.div>
@@ -42,11 +42,11 @@ export default function Datos() {
           className="flex flex-col flex-1 items-center justify-start min-[600px]:px-1 md:px-4 lg:px-8 xl:px-14"
         >
           <div className="h-16 flex items-center justify-center">
-            <p className="text-3xl font-bold text-white">100 m²</p>
+            <Dumbbell size={42} className="text-brand-gold-dark" />
           </div>
           <div className="h-8 flex items-center justify-center">
-            <p className="text-sm text-gray-400 uppercase tracking-wide">
-              Exterior
+            <p className="text-sm text-gray-400 uppercase tracking-wide -mb-4">
+              Entrenamientos Personales
             </p>
           </div>
         </m.div>
@@ -65,7 +65,7 @@ export default function Datos() {
             />
           </div>
           <div className="h-8 flex items-center justify-center">
-            <p className="text-sm text-gray-400 uppercase tracking-wide">
+            <p className="text-base text-gray-400 uppercase tracking-wide">
               Equipamiento
             </p>
           </div>
@@ -94,19 +94,19 @@ export default function Datos() {
       >
         <div className="flex flex-col items-center justify-between h-full gap-1">
           <p className="text-2xl font-bold text-white leading-none py-2">
-            300 m²
+            400 m²
           </p>
           <p className="text-xs text-gray-400 uppercase tracking-wide -mb-2">
-            Interior
+            Instalaciones
           </p>
         </div>
 
         <div className="flex flex-col items-center justify-between h-full gap-1">
-          <p className="text-2xl font-bold text-white leading-none py-2">
-            100 m²
-          </p>
-          <p className="text-xs text-gray-400 uppercase tracking-wide -mb-2">
-            Exterior
+          <div className="h-8 flex items-end justify-between">
+            <Dumbbell size={32} className="text-brand-gold-dark" />
+          </div>
+          <p className="text-xs text-gray-400 text-center uppercase tracking-wide -mt-4 -mb-6">
+            Entrenamientos <br className="block" /> Personales
           </p>
         </div>
 

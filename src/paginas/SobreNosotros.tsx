@@ -49,7 +49,7 @@ export default function SobreNosotros() {
         content="Conoce 217 Funcional GYM: nuestro espacio y nuestra forma de entrenar en Ugena (Toledo)."
       />
 
-      <section className="relative h-[60svh] bg-cover bg-center overflow-hidden">
+      <section className="relative h-[60svh] laptop:min-h-110 overflow-hidden">
         <picture className="absolute inset-0 w-full h-full pointer-events-none">
           <source
             media="(min-width: 768px)"
@@ -68,7 +68,7 @@ export default function SobreNosotros() {
           />
         </picture>
         <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/40 to-black" />
-        <div className="absolute inset-0 flex items-center justify-center -translate-y-6">
+        <div className="absolute inset-0 flex items-center laptop:pt-16 justify-center -translate-y-6">
           <h1 className="text-white font-marker text-6xl sm:text-6xl md:text-7xl lg:text-8xl tracking-wider uppercase text-center">
             Sobre nosotros
           </h1>

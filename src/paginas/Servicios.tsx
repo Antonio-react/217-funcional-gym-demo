@@ -23,7 +23,7 @@ export default function Servicios() {
         content="Descubre los servicios de 217 Funcional GYM, tu gimnasio de entrenamiento funcional en Ugena (Toledo)."
       />
 
-      <section className="relative h-[60svh] bg-cover bg-center overflow-hidden">
+      <section className="relative h-[60svh] laptop:min-h-116 overflow-hidden">
         <picture className="absolute inset-0 w-full h-full pointer-events-none">
           <source
             media="(min-width: 768px)"
@@ -42,7 +42,7 @@ export default function Servicios() {
           />
         </picture>
         <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/40 to-black" />
-        <div className="absolute inset-0 flex items-center justify-center -translate-y-6">
+        <div className="absolute inset-0 flex items-center laptop:pt-16 justify-center -translate-y-6">
           <h1 className="text-white font-marker text-6xl sm:text-7xl md:text-8xl lg:text-9xl tracking-wider uppercase text-center">
             Servicios
           </h1>

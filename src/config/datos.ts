@@ -31,7 +31,7 @@ export const datos = {
       "Calle Proyecto 5, Nave 69, Polígono Industrial La Frontera, 45217 Ugena (Toledo)",
     registroMercantil:
       "Inscrita en el Registro Mercantil de Toledo, hoja TO-50789, inscripción 1.ª",
-    ultimaActualizacion: "[PENDIENTE: fecha de publicación]",
+    ultimaActualizacion: "30 de septiembre de 2026",
   },
   siteUrl: "https://217funcionalgymdemo.netlify.app",
   email: "217funcionalgym@gmail.com",
